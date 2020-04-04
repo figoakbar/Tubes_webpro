@@ -113,7 +113,7 @@
 
                         <li class="nav-item">
                         <li class="nav-item">
-                            <a class="nav-link" href="/login.html">
+                            <a class="nav-link" href="<?php echo base_url('index.php/Home/Login/') ?>">
                                 Masuk
                             </a>
                         </li>
