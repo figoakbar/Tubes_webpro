@@ -89,7 +89,7 @@ img{
 			    </div>
 			</div>
 		  	<div class="grid-right">
-				<img src="291-2915672_football-cartoon-illustration-kids-playing-soccer-animation-png.png">
+				<img src="assets/image/291-2915672_football-cartoon-illustration-kids-playing-soccer-animation-png.png">
 			</div>
 		</div>
 </body>
