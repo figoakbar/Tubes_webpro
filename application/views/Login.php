@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <style>
-    body
+body
 {
 	font-family: Roboto;
 }
@@ -54,7 +54,6 @@ img{
 	width: 1160px;
 	height: 920px;
 }
-
 </style>
 <body>
 <div class="grid">
@@ -74,23 +73,23 @@ img{
 				</nav>
 			  	<div class="form">
 					<form style="width: 20cm;">
-					<h1 style="font-weight: bold;">Login</h1>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1" style="font-weight: ">Username</label>
-					    <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Username">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Password</label>
-					    <input type="Password" name="nim" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					  </div>
-					  <h6>Forgot Your Password ?</h6><a class="nav-link" href="" style="color: #17A1EF;">Sign Up</a>
-					  <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Submit</button>
+                        <h1 style="font-weight: bold;">Login</h1>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" style="font-weight: ">Username</label>
+                            <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="Password" name="nim" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <h6>Forgot Your Password ?</h6><a class="nav-link" href="" style="color: #17A1EF;">Sign Up</a>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Submit</button>
 					</form>
 			    </div>
 			</div>
 		  	<div class="grid-right">
 				<img src="assets/image/291-2915672_football-cartoon-illustration-kids-playing-soccer-animation-png.png">
 			</div>
-		</div>
+</div>
 </body>
 </html>
