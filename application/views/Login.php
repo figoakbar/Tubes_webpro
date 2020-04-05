@@ -91,12 +91,12 @@ img{
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-				      </li>
-					  <li class="nav-item active">
-				        <a class="nav-link" href="#" style="color: #17A1EF;">Sign Up <span class="sr-only"></span></a>
-				      </li>
+						<li class="nav-item">
+                			<a class="nav-link" href="#">Home</a>
+            			</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" style="color: #17A1EF;">Sign Up</a>
+						</li>
 				    </ul>
 				  </div>
 				</nav>
