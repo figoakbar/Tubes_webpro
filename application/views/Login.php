@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <style>
-body
-{
-	font-family: Roboto;
-}
+
 .grid
 {
 	display: grid;
@@ -33,13 +30,13 @@ body
 .form-group input[type="text"]
 {
 	border: none;
-	border-bottom: 3px solid #17A1EF;
+	border-bottom: 6px solid #17A1EF;
 	width: 100%;
 }
 .form-group input[type="password"]
 {
 	border: none;
-	border-bottom: 3px solid #17A1EF;
+	border-bottom: 6px solid #17A1EF;
 	width: 100%;
 }
 
@@ -54,19 +51,51 @@ img{
 	width: 1160px;
 	height: 920px;
 }
+
+.form-group
+{
+	padding-top : 10px;
+}
+
+.foto
+{
+	position: relative;
+  	color: white;
+}
+
+.slogan {
+  	position: absolute;
+  	width: 350px;
+	height: 148px;
+	left: 200px;
+	top: 600px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 42px;
+	display: flex;
+	align-items: center;
+
+  	color : white;
+}
+
 </style>
 <body>
 <div class="grid">
 			<div class="grid-left">
 				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-				  <a class="navbar-brand" href="#">Navbar</a>
+				  <a class="navbar-brand" href="#">LOGO</a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+				      </li>
+					  <li class="nav-item active">
+				        <a class="nav-link" href="#" style="color: #17A1EF;">Sign Up <span class="sr-only"></span></a>
 				      </li>
 				    </ul>
 				  </div>
@@ -75,24 +104,23 @@ img{
 					<form style="width: 20cm;">
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
-                            <label for="exampleInputPassword1" style="font-weight: ">Username</label>
+                            <label for="exampleInputPassword1" style="font-weight: bold;">Username</label>
                             <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
+                            <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
                             <input type="Password" name="nim" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                        <div>
-                            <span>
-                            <h6>Forgot Your Password ?</h6><a class="nav-link" href="" style="color: #17A1EF;">Sign Up</a>
-                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Submit</button>
-                            </span>
-                        </div>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Login</button>
+							<p><a class="nav-link" href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
 					</form>
 			    </div>
 			</div>
 		  	<div class="grid-right">
-				<img src="assets/image/291-2915672_football-cartoon-illustration-kids-playing-soccer-animation-png.png">
+			  	<div class = "foto">
+					<img src="assets/image/Pink-building-wallpaper-by-@beasty-1.jpg">
+					<p class="slogan">Save The Children, Save The Future.</p>
+				</div>
 			</div>
 </div>
 </body>
