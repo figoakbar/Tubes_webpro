@@ -82,8 +82,12 @@ img{
                             <label for="exampleInputPassword1">Password</label>
                             <input type="Password" name="nim" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                        <h6>Forgot Your Password ?</h6><a class="nav-link" href="" style="color: #17A1EF;">Sign Up</a>
-                        <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Submit</button>
+                        <div>
+                            <span>
+                            <h6>Forgot Your Password ?</h6><a class="nav-link" href="" style="color: #17A1EF;">Sign Up</a>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Submit</button>
+                            </span>
+                        </div>
 					</form>
 			    </div>
 			</div>
