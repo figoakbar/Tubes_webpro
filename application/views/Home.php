@@ -15,6 +15,10 @@
         #nav-item a {
             color: #444547;
         }
+        #nav{
+            background-color: #2ba3ff;
+            color: white;
+        }
         #login {
             margin-top: 50px;
             width: 30%;
@@ -82,7 +86,7 @@
 </head>
 <body style="background-color:#f4f4f4">
     <header>
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark light" style="backgrond-color:white">
+        <nav class="mb-1 navbar navbar-expand" id="nav">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="https://cdn.dribbble.com/users/3822977/screenshots/8644261/encounter_kids-01.png" height="30" alt="KIDSCARE">
@@ -113,7 +117,7 @@
 
                         <li class="nav-item">
                         <li class="nav-item">
-                            <a class="nav-link" href="/login.html">
+                            <a class="nav-link" href="<?php echo base_url('Login')?>">
                                 Masuk
                             </a>
                         </li>
