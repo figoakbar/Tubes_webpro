@@ -12,13 +12,6 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
     <style>
-        #nav-item a {
-            color: #444547;
-        }
-        #nav{
-            background-color: #2ba3ff;
-            color: white;
-        }
         #login {
             margin-top: 50px;
             width: 30%;
@@ -86,104 +79,29 @@
 </head>
 <body style="background-color:#f4f4f4">
     <header>
-        <nav class="mb-1 navbar navbar-expand" id="nav">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://cdn.dribbble.com/users/3822977/screenshots/8644261/encounter_kids-01.png" height="30" alt="KIDSCARE">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                    <ul class="navbar-nav ml-auto" id="nav-item">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">
-                                Info
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Pesanan Saya
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Kontak
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('Login')?>">
-                                Masuk
-                            </a>
-                        </li>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                            aria-labelledby="navbarDropdownMenuLink-333">
-                            <div class="card dropdown-item">
-                                <div class="card-body">
-                                    <a class="navbar-brand" href="#">
-                                        <img src="/icon/traveline.png" height="30" alt="mdb logo">
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                                        <ul class="navbar-nav ml-auto" id="nav-item">
-                                            <li class="nav-item ">
-                                                <a class="nav-link" href="#">
-                                                    Info
-                                                    <span class="sr-only">(current)</span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">
-                                                    Pesanan Saya
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">
-                                                    Kontak
-                                                </a>
-                                            </li>
-
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Masuk
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                                                    aria-labelledby="navbarDropdownMenuLink-333">
-                                                    <div class="card dropdown-item">
-                                                        <div class="card-body">
-                                                        </div>
-                                                    </div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/registrasi.html">
-                                                    Daftar
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/registrasi.html">
-                                Daftar
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="navbar navbar-expand-md navbar-light mb-4 "  role="navigation">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Register</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
     </header>
 
     <section id="carousel" style="">
@@ -246,13 +164,6 @@
 
             </div>
 
-        </div>
-    </section>
-
-    <section>
-        <div class="card container" id="cari-posyandu">
-            <span>Cari Posyandu pilihan</span>
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Cari">
         </div>
     </section>
 
