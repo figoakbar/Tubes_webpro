@@ -85,14 +85,14 @@ img{
 <div class="grid">
 			<div class="grid-left">
 				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-				  <a class="navbar-brand" href="#">LOGO</a>
+				  <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt="" style="height: 70px; width: 130px;"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
 						<li class="nav-item">
-                			<a class="nav-link" href="#">Home</a>
+                			<a class="nav-link" href="<?php echo site_url('Home.php'); ?>">Home</a>
             			</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" style="color: #17A1EF;">Sign Up</a>
@@ -104,8 +104,8 @@ img{
 					<form style="width: 20cm;">
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
-                            <label for="exampleInputPassword1" style="font-weight: bold;">Username</label>
-                            <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                            <label for="exampleInputPassword1" style="font-weight: bold;">Email Address</label>
+                            <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
