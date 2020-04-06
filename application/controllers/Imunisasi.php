@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class Home extends CI_Controller {
+class Imunisasi extends CI_Controller {
  
     public function __construct()
     {
@@ -13,6 +13,6 @@ class Home extends CI_Controller {
     public function index()
     {
         //Load page_header and page_index from views
-        $this->load->view('Login');
+        $this->load->view('Home');
     }
 }

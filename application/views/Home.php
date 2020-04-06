@@ -12,9 +12,6 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
     <style>
-        #nav-item a {
-            color: #444547;
-        }
         #login {
             margin-top: 50px;
             width: 30%;
@@ -81,106 +78,30 @@
     </style>
 </head>
 <body style="background-color:#f4f4f4">
-    <header>
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark light" style="backgrond-color:white">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://cdn.dribbble.com/users/3822977/screenshots/8644261/encounter_kids-01.png" height="30" alt="KIDSCARE">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                    <ul class="navbar-nav ml-auto" id="nav-item">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">
-                                Info
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Pesanan Saya
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Kontak
-                            </a>
-                        </li>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+        <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                        <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login.html">
-                                Masuk
-                            </a>
-                        </li>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                            aria-labelledby="navbarDropdownMenuLink-333">
-                            <div class="card dropdown-item">
-                                <div class="card-body">
-                                    <a class="navbar-brand" href="#">
-                                        <img src="/icon/traveline.png" height="30" alt="mdb logo">
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                                        <ul class="navbar-nav ml-auto" id="nav-item">
-                                            <li class="nav-item ">
-                                                <a class="nav-link" href="#">
-                                                    Info
-                                                    <span class="sr-only">(current)</span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">
-                                                    Pesanan Saya
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">
-                                                    Kontak
-                                                </a>
-                                            </li>
-
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Masuk
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                                                    aria-labelledby="navbarDropdownMenuLink-333">
-                                                    <div class="card dropdown-item">
-                                                        <div class="card-body">
-                                                        </div>
-                                                    </div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/registrasi.html">
-                                                    Daftar
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/registrasi.html">
-                                Daftar
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Daftar</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
+            </form>
+        </div>
+    </nav>
 
     <section id="carousel" style="">
         <div class="container">
@@ -244,14 +165,7 @@
 
         </div>
     </section>
-
-    <section>
-        <div class="card container" id="cari-posyandu">
-            <span>Cari Posyandu pilihan</span>
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Cari">
-        </div>
-    </section>
-
+    <br>
     <section id="pilihan-posyandu" class="container card" style="margin-bottom:40px">
         <h5 class="card-title container" style="margin-top:20px" id="judul-posyandu">
             <strong class="container">Recommended</strong>
