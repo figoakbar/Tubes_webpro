@@ -26,5 +26,14 @@ class imunisasiModel extends CI_Model{
         return $this->db->update('imunisasi',$data);
     }
 
-    //beli atau fungsi imunisasi dibawah 
+    public function deleteImnunisasi($id){
+        $this->db->where('id_imunisasi',$id);
+        return $this->db->delete('imunisasi');
+    }
+    //fungsi lihat jadwal 
+
+    public function getJadwalImunisasi($id){
+        $this->db->where('id_imunisasi',$id);
+        return $this->db->get('imunisasiJadwal')->result_array();
+    }
 }
