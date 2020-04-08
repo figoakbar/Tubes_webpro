@@ -12,16 +12,6 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
     <style>
-        #login {
-            margin-top: 50px;
-            width: 30%;
-            margin-bottom: 80px;
-        }
-        #registrasi {
-            margin-top: 50px;
-            width: 50%;
-            margin-bottom: 80px;
-        }
         #carousel {
             margin-top: 0px;
             padding-top: 0px;
@@ -83,7 +73,6 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -422,10 +411,13 @@
         </section>
     </div>
 
-    <section class="">
+    <section class="footer">
             <footer class="page-footer font-small blue pt-4">
                     <div class="container-fluid text-center text-md-left">
                         <div class="row container">
+                            <div class="col-md-2 mb-md-0 mb-2">
+                                <img src="assets/image/LogoAsli.png" alt="Logo" width="150px" height="150px">
+                            </div>
                             <div class="col-md-6 mt-md-0 mt-3">
                                 <h5 class="text-uppercase">
                                     <img src="/icon/traveline.png" alt="" style="width:35%">
@@ -435,7 +427,7 @@
                             </div>
 
                             <hr class="clearfix w-100 d-md-none pb-3">
-                            <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="col-md-2 mb-md-0 mb-3">
                                 <h5 class="text-uppercase">Link</h5>
                                 <ul class="list-unstyled">
                                     <li>
@@ -452,7 +444,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="col-md-2 mb-md-0 mb-3">
                                 <h5 class="text-uppercase">Link</h5>
                                 <ul class="list-unstyled">
                                     <li>
