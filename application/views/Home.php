@@ -90,10 +90,10 @@
                 <a class="nav-link" href="#" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#">Imunisasi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Daftar</a>
+                <a class="nav-link" href="#">Pesan Obat</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
