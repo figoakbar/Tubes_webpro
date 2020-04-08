@@ -64,7 +64,12 @@
             margin-bottom: 15px;
             height: 100px;
         }
-
+        .card{
+            border-radius: 30px;
+        }
+        .card-img-top{
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body style="background-color:#f4f4f4">
