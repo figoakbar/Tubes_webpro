@@ -15,12 +15,17 @@
             background-image: url('assets/image/iStock-638377134.jpg');
         }
         .card{
-            box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+            border: 1px solid black;
         }
         .card-title{
             color: #17A1EF;
         }
-        
+        .btn-primary{
+            border-radius: 20px;
+        }
+        .nav-item:hover{
+            color: #17A1EF;
+        }
    </style>
    <body>
     <!-- As a heading -->
@@ -50,7 +55,7 @@
     </nav>
 	<div class="title" style="padding-bottom: 200px; margin: 0px;">
 	    <div class="container" style="margin-top: 0px;">
-            <h1 style="vertical-align: middle;">LINDUNGI ANAK ANDA.</h1>
+            <h1 style="padding-top: 50px;">ADA YANG KEPIKIRAN BUAT TITLE?.</h1>
 	    </div>
 	</div>
     <br>
@@ -60,13 +65,13 @@
                 <div style="padding : 50px;">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Cari obat" aria-label="Search" style="border-radius: 8px; width : 70%; margin-left: 40px;">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Cari</button>
                     </form>
                 </div>
                 <div class="row">
                 <div class="col-lg-4">
                     <div class="card container" id="card" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
+                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -76,19 +81,19 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
+                    <img class="card-img-top" src="assets/image/3c3180b212f6b37321e5df5452a34ea4.jpg" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
                         <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
+                            <h5 class="card-title" id="nama-obat">Tempra Paracetamol</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
-                            <a href="#" class="btn btn-primary">Pesan</a>
+                            <a href="#" class="btn btn-primary" style="">Pesan</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                    <img class="card-img-top" src="assets/image/6507175_13b2f81d-9639-47ec-9135-5c28c7f52e66.jpg" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
+                            <h5 class="card-title" id="nama-obat">OBH Combi</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
                             <a href="#" class="btn btn-primary">Pesan</a>
                         </div>
@@ -98,7 +103,7 @@
                 <div class="row" style="margin-top: 50px;">
                 <div class="col-lg-4">
                     <div class="card container " style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                                 <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                                 <p>Lorem ipsum dolor sit amet..</p>
@@ -108,7 +113,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem;border-radius: 30px;">
-                    <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                    <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -118,7 +123,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/2/150923423/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
