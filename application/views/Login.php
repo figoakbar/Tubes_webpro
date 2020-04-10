@@ -79,7 +79,10 @@ img{
 
   	color : white;
 }
-
+.signUp{
+	padding-top: 60px;
+    padding-left: 100px;
+}
 </style>
 <body>
 <div class="grid">
@@ -91,12 +94,6 @@ img{
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
-						<li class="nav-item">
-                			<a class="nav-link" href="<?php echo site_url('Home.php'); ?>">Home</a>
-            			</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" style="color: #17A1EF;">Sign Up</a>
-						</li>
 				    </ul>
 				  </div>
 				</nav>
@@ -111,10 +108,13 @@ img{
                             <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
                             <input type="Password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Login</button>
-							<p><a class="nav-link" href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right; width: 20%;">Login</button>
+							<p><a href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
 					</form>
-			    </div>
+				</div>
+				<div class="signUp">
+					<p>Don't Have an account? <span><a href="#" style="color: #17A1EF;">Sign Up</a></span></p>
+				</div>
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
