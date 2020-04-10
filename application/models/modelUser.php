@@ -17,6 +17,10 @@ class modelUser extends CI_Model{
         return $this->db->get('user')->row_array();
     }
 
+    public function loginUser($table,$data){
+        return $this->db->get_where($table,$data);
+    }
+
     public function insertUser($data){
         return $this->db->insert('user',$data);
     }
@@ -44,7 +48,7 @@ class modelUser extends CI_Model{
         return $this->db->get('anak_user')->result_array();
     }
 
-    public function deleteUser($id){
+    public function deleteAnakUser($id){
         $this->db->where('id_anak',$id);
         return $this->db->delete('anak_user');
     }
@@ -75,17 +79,17 @@ class modelUser extends CI_Model{
         return $this->db->insert('imunisasipesan',$data);
     }
 
-    public function updateDataPesanImunisasi($id,$data){
+    public function updateDataPesanObat($id,$data){
         $this->db->where('id_pesanObat',$id);
         $this->db->update('pesanObat',$data);
     }
 
-    public function getDataPesanImunisasi($id){
+    public function getDataPesanObat($id){
         $this->db->where('id_pesanObat',$id);
         return $this->db->get('pesanObat')->result_array();
     }
 
-    public function deleteUser($id){
+    public function deletePesanObat($id){
         $this->db->where('id_pesanObat',$id);
         return $this->db->delete('pesanObat');
     }

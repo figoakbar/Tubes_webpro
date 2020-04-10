@@ -101,15 +101,15 @@ img{
 				  </div>
 				</nav>
 			  	<div class="form">
-					<form style="width: 20cm;">
+					<form style="width: 20cm;" action="<?php echo base_url('loginController/aksi_login'); ?>" method="post"> 
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
                             <label for="exampleInputPassword1" style="font-weight: bold;">Email Address</label>
-                            <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+                            <input type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
-                            <input type="Password" name="nim" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="Password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
                             <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right;">Login</button>
 							<p><a class="nav-link" href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
