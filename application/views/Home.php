@@ -317,21 +317,21 @@
             <div class="row slideanim">
                 <div class="col-sm-4">
                     <div class="avatar mx-auto" id="gambar-why">
-                        <img src="assets/image/travel.png" class="rounded-circle z-depth-1 img-fluid">
+                        <img src="../assets/image/travel.png" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <h4>PAKET TERBAIK</h4>
                     <p>Lorem ipsum dolor sit amet..</p>
                 </div>
                 <div class="col-sm-4">
                     <div class="avatar mx-auto" id="gambar-why">
-                        <img src="assets/image/transaction.png" class="rounded-circle z-depth-1 img-fluid">
+                        <img src="../assets/image/transaction.png" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <h4>KEMUDAHAN TRANSAKSI</h4>
                     <p>Lorem ipsum dolor sit amet..</p>
                 </div>
                 <div class="col-sm-4">
                     <div class="avatar mx-auto" id="gambar-why">
-                        <img src="assets/image/secu.png" class="rounded-circle z-depth-1 img-fluid">
+                        <img src="../assets/image/secu.png" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <h4>TRANSAKSI AMAN</h4>
                     <p>Lorem ipsum dolor sit amet..</p>
@@ -351,7 +351,7 @@
                 <div class="col-md-4 mb-md-0 mb-5">
                     <div class="testimonial">
                         <div class="avatar mx-auto">
-                            <img src="assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
+                            <img src="../assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
                         </div>
                         <h5 class="font-weight-bold dark-grey-text mt-4">Nama 1</h5>
                         <p class="font-weight-normal dark-grey-text">
@@ -371,7 +371,7 @@
                 <div class="col-md-4 mb-md-0 mb-5">
                     <div class="testimonial">
                         <div class="avatar mx-auto">
-                            <img src="assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
+                            <img src="../assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
                         </div>
                         <h5 class="font-weight-bold dark-grey-text mt-4">Nama 2</h5>
                         <p class="font-weight-normal dark-grey-text">
@@ -393,7 +393,7 @@
                     <div class="testimonial">
 
                         <div class="avatar mx-auto">
-                            <img src="assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
+                            <img src="../assets/image/avatar.png" class="rounded-circle z-depth-1 img-fluid">
                         </div>
 
                         <h5 class="font-weight-bold dark-grey-text mt-4">Nama 3</h5>
@@ -421,7 +421,7 @@
                     <div class="container-fluid text-center text-md-left">
                         <div class="row container">
                             <div class="col-md-2 mb-md-0 mb-2">
-                                <img src="assets/image/LogoAsli.png" alt="Logo" width="150px" height="150px">
+                                <img src="../assets/image/LogoAsli.png" alt="Logo" width="150px" height="150px">
                             </div>
                             <div class="col-md-6 mt-md-0 mt-3">
                                 <h5 class="text-uppercase">
