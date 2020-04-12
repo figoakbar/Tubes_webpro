@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class loginController extends CI_Controller {
+class loginController extends CI_Controller{
  
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
         $this->load->model('modelUser');
+        $this->load->helper('url');
      
     }
     public function index()
@@ -15,8 +16,9 @@ class loginController extends CI_Controller {
     }
 
     public function aksi_login(){
-        $email = $this->input->post('email');
+        /*$email = $this->input->post('email');
         $password = $this->input->post('password');
+        $this->load->helper('url');
         $data = array(
             'email' => $email,
             'passwordUser' => $password
@@ -28,10 +30,11 @@ class loginController extends CI_Controller {
                 'status' => "login"
             );
             $this->session->set_userdata($data_session);
-            redirect(base_url("/homeController"));
+            redirect(base_url("/homeController/index"));
         }else {
             $this->session->set_flashdata('error_messages','Email atau Password tidak valid');  
-            redirect(base_url('/loginController'));
-        }
+            redirect(base_url('/loginController/index'));
+        }*/
+        redirect('/homeController');
     }
 }
