@@ -1,11 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class homeController extends CI_Controller{
+class HomeController extends CI_Controller{
  
     function __construct()
     {
-        parent::__construct();     
+        parent::__construct(); 
+        $this->load->model('HomeModel');    
     }
  
     public function index()

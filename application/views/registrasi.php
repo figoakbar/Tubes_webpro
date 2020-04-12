@@ -99,9 +99,6 @@ img{
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
 						<li class="nav-item">
-                			<a class="nav-link" href="<?php echo site_url('Home.php'); ?>">Home</a>
-            			</li>
-						<li class="nav-item">
 							<a class="nav-link" href="#" style="color: #17A1EF;">Login</a>
 						</li>
 				    </ul>
@@ -140,7 +137,7 @@ img{
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
-					<img src="assets/image/stethoscope.jpg">
+					<img src="\assets\image\stethoscope.jpg">
 					<p class="slogan" style="color: black;">Save The Children, Save The Future.</p>
 				</div>
 			</div>

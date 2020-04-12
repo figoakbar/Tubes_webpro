@@ -98,7 +98,7 @@ img{
 				  </div>
 				</nav>
 			  	<div class="form">
-					<form style="width: 20cm;" action="<?= base_url('/aksi_login') ?>" method="post"> 
+					<form style="width: 20cm;" action="<?= site_url('HomeController') ?>" method="post"> 
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
                             <label for="exampleInputPassword1" style="font-weight: bold;">Email Address</label>
@@ -113,7 +113,7 @@ img{
 					</form>
 				</div>
 				<div class="signUp">
-					<p>Don't Have an account? <span><a href="<?= site_url('registrasiController') ?>" style="color: #17A1EF;">Sign Up</a></span></p>
+					<p>Don't Have an account? <span><a href="<?= site_url('RegistrasiController') ?>" style="color: #17A1EF;">Sign Up</a></span></p>
 				</div>
 			</div>
 		  	<div class="grid-right">
