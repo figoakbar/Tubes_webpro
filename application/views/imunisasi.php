@@ -11,7 +11,7 @@
 </head>
 <style>
     .title{
-        background-image: url('assets/image/iStock-638377134.jpg')
+        background-image: url('../assets/image/iStock-638377134.jpg')
     }
     .table{
         margin-top: 30px;

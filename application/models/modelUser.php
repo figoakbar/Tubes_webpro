@@ -17,8 +17,16 @@ class modelUser extends CI_Model{
         return $this->db->get('user')->row_array();
     }
 
-    public function loginUser($table,$data){
-        return $this->db->get_where($table,$data);
+    public function loginUser($email,$password){
+        $this->db->where('email', $email);  
+        $this->db->where('passwordUser', $password);  
+        $query = $this->db->get('user');  
+        if($query->num_rows() > 0){  
+            return true;  
+        }  
+        else{  
+            return false;       
+        }  
     }
 
     public function insertUser($data){

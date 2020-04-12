@@ -85,6 +85,8 @@ img{
 }
 </style>
 <body>
+
+
 <div class="grid">
 			<div class="grid-left">
 				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
@@ -97,16 +99,30 @@ img{
 				    </ul>
 				  </div>
 				</nav>
+				<?php if ($this->session->flashdata('error_mes')) : ?>
+				<div class="row mt-3">
+					<div class="col-md-6">
+						<div class="alert alert-success alert-dismissible fade show" role="alert">
+							<?= $this->session->flashdata('error_messages'); ?>.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<?php endif; ?>
 			  	<div class="form">
-					<form style="width: 20cm;" action="<?= site_url('HomeController') ?>" method="post"> 
+					<form style="width: 20cm;" action="<?= site_url('LoginController/aksi_login') ?>" method="post"> 
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
                             <label for="exampleInputPassword1" style="font-weight: bold;">Email Address</label>
                             <input type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+							
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
                             <input type="Password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							<span class="text-danger"><?php echo form_error('email'); ?>
                         </div>
                             <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right; width: 20%;">Login</button>
 							<p><a href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
@@ -118,7 +134,7 @@ img{
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
-					<img src="assets/image/Pink-building-wallpaper-by-@beasty-1.jpg">
+					<img src="../assets/image/Pink-building-wallpaper-by-@beasty-1.jpg">
 					<p class="slogan">Save The Children, Save The Future.</p>
 				</div>
 			</div>

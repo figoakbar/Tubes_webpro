@@ -99,36 +99,36 @@ img{
 				  <div class="collapse navbar-collapse" id="navbarNav">
 				    <ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#" style="color: #17A1EF;">Login</a>
+							<a class="nav-link" href="<?= site_url('LoginController') ?>" style="color: #17A1EF;">Login</a>
 						</li>
 				    </ul>
 				  </div>
 				</nav>
 			  	<div class="form">
-					<form style="width: 20cm;">
+					<form style="width: 20cm;" action ="<?= site_url('RegistrasiController/user_registration')?>" method ='post'>
                         <h1 style="font-weight: bold;">Sign Up</h1>
                         <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="inputPassword" style="font-weight: bold;">Name</label>
-                                        <input type="text" class="form-control" id="inputPassword" placeholder="Name">
+                                        <label for="inputName" style="font-weight: bold;">Name</label>
+                                        <input type="text" name ='name' class="form-control" id="inputName" placeholder="Name">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputPassword" style="font-weight: bold;">Email Address</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Email Address">
+                                        <label for="inputEmail" style="font-weight: bold;">Email Address</label>
+                                        <input type="email" name ='email' class="form-control" id="inputEmail" placeholder="Email Address">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAddress" style="font-weight: bold;">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                    <input type="text" name ='alamat' class="form-control" id="inputAddress" placeholder="Address">
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputPassword" style="font-weight: bold;">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        <input type="password" name = 'password' class="form-control" id="inputPassword" placeholder="Password">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputPassword" style="font-weight: bold;">Confirmed Password</label>
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Confirmed Password">
+                                        <label for="inputPasswordConf" style="font-weight: bold;">Confirmed Password</label>
+                                        <input type="password" name='confPass'  class="form-control" id="inputPasswordConf" placeholder="Confirmed Password">
                                     </div>
                                     <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right; width: 100%; margin-top: 15px;">Sign Up</button>
                                 </div>
@@ -137,7 +137,7 @@ img{
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
-					<img src="\assets\image\stethoscope.jpg">
+					<img src="..\assets\image\stethoscope.jpg">
 					<p class="slogan" style="color: black;">Save The Children, Save The Future.</p>
 				</div>
 			</div>
