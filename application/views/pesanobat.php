@@ -55,7 +55,7 @@
     </nav>
 	<div class="title" style="padding-bottom: 200px; margin: 0px;">
 	    <div class="container" style="margin-top: 0px;">
-            <h1 style="padding-top: 50px;">ADA YANG KEPIKIRAN BUAT TITLE?.</h1>
+            <h1 style="padding-top: 50px;">Pesan Obat Mudah dan Cepat</h1>
 	    </div>
 	</div>
     <br>
