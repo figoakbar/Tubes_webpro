@@ -137,7 +137,7 @@ img{
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
-					<img src="..\assets\image\stethoscope.jpg">
+					<img src="../assets/image/stethoscope.jpg">
 					<p class="slogan" style="color: black;">Save The Children, Save The Future.</p>
 				</div>
 			</div>
