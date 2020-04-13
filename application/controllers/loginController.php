@@ -11,7 +11,7 @@ class LoginController extends CI_Controller{
     }
 
     public function index(){
-        $this->load->view('Login');
+        $this->load->view('InputImunisasi');
     }
 
     public function aksi_login(){
