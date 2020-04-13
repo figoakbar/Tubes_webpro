@@ -13,6 +13,7 @@
    <style>
         .title{
             background-image: url('../assets/image/iStock-638377134.jpg');
+            background-size:cover;
         }
         .card{
             border: 1px solid black;
