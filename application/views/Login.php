@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Kidscare</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -90,42 +90,29 @@ img{
 <div class="grid">
 			<div class="grid-left">
 				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-				  <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt="" style="height: 70px; width: 130px;"></a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNav">
-				    <ul class="navbar-nav">
-				    </ul>
-				  </div>
-				</nav>
-				<?php if ($this->session->flashdata('error_mes')) : ?>
-				<div class="row mt-3">
-					<div class="col-md-6">
-						<div class="alert alert-success alert-dismissible fade show" role="alert">
-							<?= $this->session->flashdata('error_messages'); ?>.
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
+					<a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt="" style="height: 70px; width: 130px;"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+						</ul>
 					</div>
-				</div>
-				<?php endif; ?>
+				</nav>
 			  	<div class="form">
 					<form style="width: 20cm;" action="<?= site_url('LoginController/aksi_login') ?>" method="post"> 
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
                             <label for="exampleInputPassword1" style="font-weight: bold;">Email Address</label>
                             <input type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
-							
+							<span class="text-danger"><?php echo form_error('email'); ?>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1"  style="font-weight: bold;">Password</label>
                             <input type="Password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-							<span class="text-danger"><?php echo form_error('email'); ?>
+							<span class="text-danger"><?php echo form_error('password'); ?>
                         </div>
-                            <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right; width: 20%;">Login</button>
-							<p><a href="" style="color: #17A1EF;">Forgot Your Password?</a></p>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px; float: right; width: 20%;">Login</button>
 					</form>
 				</div>
 				<div class="signUp">
@@ -134,7 +121,7 @@ img{
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
-					<img src="../assets/image/Pink-building-wallpaper-by-@beasty-1.jpg">
+					<img src="<?php echo $this->config->item('base_url'); ?>/assets/image/Pink-building-wallpaper-by-@beasty-1.jpg">
 					<p class="slogan">Save The Children, Save The Future.</p>
 				</div>
 			</div>

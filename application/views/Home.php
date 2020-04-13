@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Beranda | Album.id</title>
+    <title>Kidscare</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -74,20 +74,20 @@
 </head>
 <body style="background-color:#f4f4f4">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?= site_url('HomeController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Imunisasi</a>
+                <a class="nav-link" href="<?= site_url('ImunisasiController')?>">Imunisasi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pesan Obat</a>
+                <a class="nav-link" href="<?= site_url('PesanObatController')?>">Pesan Obat</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

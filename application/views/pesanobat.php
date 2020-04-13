@@ -12,7 +12,7 @@
    </head>
    <style>
         .title{
-            background-image: url('assets/image/iStock-638377134.jpg');
+            background-image: url('../assets/image/iStock-638377134.jpg');
         }
         .card{
             border: 1px solid black;
@@ -30,7 +30,7 @@
    <body>
     <!-- As a heading -->
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt="Logo"></a>
+        <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?= site_url('HomeController')?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Imunisasi</a>
+                <a class="nav-link" href="<?= site_url('ImunisasiController')?>">Imunisasi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"  style="color: #17A1EF;">Pesan Obat</a>
+                <a class="nav-link" href="<?= site_url('PesanObatController')?>"  style="color: #17A1EF;">Pesan Obat</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -71,7 +71,7 @@
                 <div class="row">
                 <div class="col-lg-4">
                     <div class="card container" id="card" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
+                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="assets/image/3c3180b212f6b37321e5df5452a34ea4.jpg" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
+                    <img class="card-img-top" src="../assets/image/3c3180b212f6b37321e5df5452a34ea4.jpg" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Tempra Paracetamol</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="assets/image/6507175_13b2f81d-9639-47ec-9135-5c28c7f52e66.jpg" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                    <img class="card-img-top" src="../assets/image/6507175_13b2f81d-9639-47ec-9135-5c28c7f52e66.jpg" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">OBH Combi</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -103,7 +103,7 @@
                 <div class="row" style="margin-top: 50px;">
                 <div class="col-lg-4">
                     <div class="card container " style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                                 <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                                 <p>Lorem ipsum dolor sit amet..</p>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem;border-radius: 30px;">
-                    <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                    <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card container" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
+                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
                             <p>Lorem ipsum dolor sit amet..</p>
@@ -140,11 +140,11 @@
                     <div class="container-fluid text-center text-md-left">
                         <div class="row container">
                             <div class="col-md-2 mb-md-0 mb-2">
-                                <img src="assets/image/LogoAsli.png" alt="Logo" width="150px" height="150px">
+                                <img src="../assets/image/LogoAsli.png" alt="Logo" width="150px" height="150px">
                             </div>
                             <div class="col-md-6 mt-md-0 mt-3">
                                 <h5 class="text-uppercase">
-                                    <img src="/icon/traveline.png" alt="" style="width:35%">
+                                    <img src="../icon/traveline.png" alt="" style="width:35%">
                                 </h5>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis deleniti reprehenderit labore animi eius magnam? Laudantium atque minus nemo, ea reiciendis tempora molestias excepturi! Modi iusto consequatur aperiam minima odio?</p>
 

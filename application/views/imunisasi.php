@@ -34,7 +34,7 @@
 </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt="Logo"></a>
+        <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,13 +42,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?= site_url('HomeController')?>">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #17A1EF;" >Imunisasi</a>
+                <a class="nav-link" href="<?= site_url('ImunisasiController')?>" style="color: #17A1EF;" >Imunisasi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pesan Obat</a>
+                <a class="nav-link" href="<?= site_url('PesanObatController')?>">Pesan Obat</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

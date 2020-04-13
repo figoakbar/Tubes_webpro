@@ -3,15 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
 class LoginController extends CI_Controller{
  
-    function __construct()
-    {
+    function __construct(){
         parent::__construct();
         $this->load->model('modelUser');
         $this->load->helper('url');
      
     }
-    public function index()
-    {
+
+    public function index(){
         $this->load->view('Login');
     }
 
@@ -30,4 +29,5 @@ class LoginController extends CI_Controller{
             redirect(base_url());
         }
     }
+    
 }

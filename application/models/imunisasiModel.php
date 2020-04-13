@@ -36,4 +36,8 @@ class imunisasiModel extends CI_Model{
         $this->db->where('id_imunisasi',$id);
         return $this->db->get('imunisasiJadwal')->result_array();
     }
+
+    public function getAllJadwalImunisasi(){
+        return $this->db->get('imunisasiJadwal')->result_array();
+    }
 }
