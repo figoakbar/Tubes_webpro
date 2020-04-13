@@ -81,6 +81,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('HomeController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
