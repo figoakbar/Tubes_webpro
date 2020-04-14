@@ -16,7 +16,7 @@
 </head>
 <style>
     .title{
-        background-image: url('../assets/image/BgInput.jpeg');
+        background-image: url('../assets/image/iStock-638377134.jpg');
         background-size:cover;
     }
     .table{
@@ -36,7 +36,9 @@
         width:100px;
         border-radius: 100%
     }
-
+    .footer{
+        margin-top: 80px;
+    }
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
