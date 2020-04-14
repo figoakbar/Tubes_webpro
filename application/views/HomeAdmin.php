@@ -84,7 +84,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href="https://cdn1-production-images-kly.akamaized.net/EdN6q7obzoMRD9rOgxzs3g4wGww=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1746429/original/058190900_1508568500-20171021-Monyet-AFP2.jpg"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('InputObatController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Rumah Sakit</h5>

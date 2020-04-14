@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class HomeImunisasiController extends CI_Controller{
+class InputObatController extends CI_Controller{
  
     function __construct()
     {
         parent::__construct(); 
-        $this->load->model('imunisasiModel');    
+        $this->load->model('InputObatModel');    
     }
  
     public function index()
     {
-        $this->load->view('HomeInputImunisasi.php');
+        $this->load->view('InputObat.php');
     }
 
 }
