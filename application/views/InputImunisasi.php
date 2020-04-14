@@ -32,15 +32,15 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <!-- Default form login -->
+
             <form class=" border border-light p-5">
-                <h1><img src="assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
+                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
                 <p>Nama Imunisasi</p>
-                <input type="name" name="telephone" class="form-control mb-4">
-                <!-- Sign in button -->
+                <input type="name" name="namaimunisasi" class="form-control mb-4">
+                <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
             </form>
-            <!-- Default form login -->
+
         </div>
 </body>
 

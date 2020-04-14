@@ -11,6 +11,7 @@ class HomeImunisasiController extends CI_Controller{
  
     public function index()
     {
-        $this->load->view('HomeInputImunisasi.php');
+        $this->load->view('InputObat.php');
     }
+
 }
