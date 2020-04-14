@@ -16,7 +16,7 @@
             background-size:cover;
         }
         .card{
-            border: 1px solid black;
+            border: 1px solid #3d3d3d;
         }
         .card-title{
             color: #17A1EF;
@@ -52,6 +52,15 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
             </form>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-toggle my-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/image/account.svg" alt="icon" height="50px" width="50px" >
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="<?= site_url('homeController/logout')?>">Logout</a>
+            </div>
         </div>
     </nav>
 	<div class="title" style="padding-bottom: 200px; margin: 0px;">
