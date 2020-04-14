@@ -34,7 +34,7 @@
             <div class="card mx-auto" id="login">
             <!-- Default form login -->
             <form class=" border border-light p-5">
-                <h1><img src="assets/image/Logo.png">Imunisasi</h1><br><br>
+                <h1><img src="../assets/image/Logo.png">Imunisasi</h1><br><br>
                 <a href="InputImunisasi.php" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Imunisasi</a>
                 <a href="" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Jadwal</a>
             </form>

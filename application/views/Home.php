@@ -99,7 +99,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Profil</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="<?= site_url('homeController/logout')?>">Logout</a>
             </div>
         </div>
     </nav>

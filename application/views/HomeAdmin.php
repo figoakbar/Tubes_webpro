@@ -61,12 +61,21 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
             </form>
         </div>
+        <div class="dropdown">
+            <a class="dropdown-toggle my-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/image/account.svg" alt="icon" height="50px" width="50px" >
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="<?= site_url('homeController/logout')?>">Logout</a>
+            </div>
+        </div>
     </nav>
     <section id="pilihan-input" class="container" style="margin-bottom:40px">
         <h3 style="text-align: center;"> INPUT DATA </h3>
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
+                <a href="https://makassar.terkini.id/aset/images/sites/2/2018/04/blog-1-e1524635651393.jpg"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Obat</h5>
@@ -75,7 +84,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
+                <a href="https://cdn1-production-images-kly.akamaized.net/EdN6q7obzoMRD9rOgxzs3g4wGww=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1746429/original/058190900_1508568500-20171021-Monyet-AFP2.jpg"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Rumah Sakit</h5>
@@ -84,7 +93,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeImunisasiController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat" href ="">Input Imunisasi</h5>
