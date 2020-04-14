@@ -86,23 +86,20 @@ img{
 
   	color : white;
 }
+.login{
+	padding-top: 60px;
+    padding-left: 100px;
+}
 
 </style>
 <body>
 <div class="grid">
 			<div class="grid-left">
 				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-				  <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt="" style="height: 70px; width: 130px;"></a>
+				  <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt="" style="height: 70px; width: 130px;"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNav">
-				    <ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="<?= site_url('LoginController') ?>" style="color: #17A1EF;">Login</a>
-						</li>
-				    </ul>
-				  </div>
 				</nav>
 			  	<div class="form">
 					<form style="width: 20cm;" action ="<?= site_url('RegistrasiController/user_registration')?>" method ='post'>
@@ -134,6 +131,9 @@ img{
                                 </div>
                     </form>
 			    </div>
+				<div class="login">
+					<p>Already Have an account? <span><a href="<?= site_url('LoginController') ?>" style="color: #17A1EF;">Login</a></p>
+				</div>
 			</div>
 		  	<div class="grid-right">
 			  	<div class = "foto">
