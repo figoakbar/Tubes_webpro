@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
-    <title>Admin Page</title>
+    <title>Input Obat KidsCare</title>
 </head>
 <style type="text/css">
         #nav-item a {
@@ -25,7 +25,7 @@
         }
         body{
             padding: 0px;
-            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-medical-doctor-science-background-backgroundbackgrounddoctorsmedicalmedicinehealth-image_68227.jpg');
+            background-image: url('https://cdn0-production-images-kly.akamaized.net/mznHlYed0VeT1lxLZyxSg-PzCiI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1583162/original/090823200_1493797707-Jangan-Gunakan-Antibiotik-Sembarangan-Ini-Alasannya.jpg');
             background-size:cover
         }
 
@@ -34,13 +34,11 @@
             <div class="card mx-auto" id="login">
             
             <form class=" border border-light p-5">
-                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br>
-                <p>JadwalImunisasi</p>
-                <input type="date" id="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
-                <p>Id Imunisasi</p>
-                <input type="text" name="idImunisasi" class="form-control mb-4" placeholder="Id Imunisasi">
-                <p>Id Rumah Sakit</p>
-                <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
+                <h1><img src="../assets/image/Logo.png">Obat</h1><br>
+                <p>Nama Obat</p>
+                <input type="text" name="namaobat" class="form-control mb-4">
+                <p>Jenis Obat</p>
+                <input type="text" name="jenisobat" class="form-control mb-4">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
             </form>
