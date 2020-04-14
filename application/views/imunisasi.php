@@ -39,6 +39,10 @@
     .footer{
         margin-top: 80px;
     }
+    .btn{
+        border-radius: 40px;
+    }
+
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
@@ -60,10 +64,19 @@
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
                 </form>
             </div>
+            <div class="dropdown">
+            <a class="dropdown-toggle my-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/image/account.svg" alt="icon" height="50px" width="50px" >
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="<?= site_url('homeController/logout')?>">Logout</a>
+            </div>
+        </div>
         </nav>
     <div class="title" style="padding-bottom: 200px; margin: 0px;">
         <div class="container" style="margin-top: 0px;">
@@ -74,9 +87,9 @@
         <thead>
             <tr>
             <th scope="col">No.</th>
-            <th scope="col">Rumah Sakit</th>
+            <th scope="col" style="background-color: #e968ab;">Rumah Sakit</th>
             <th scope="col">Jenis Imunisasi</th>
-            <th scope="col">Jadwal</th>
+            <th scope="col" style="background-color: #e968ab;">Jadwal</th>
             <th scope="col">Harga</th>
             <th scope="col"></th>
             </tr>
@@ -88,7 +101,7 @@
             <td>Influenza</td>
             <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
             <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn btn-primary">></a></td>
+            <td><a href="#" class="btn">></a></td>
             </tr>
             <tr>
             <th scope="row">2</th>
@@ -96,7 +109,7 @@
             <td>Dengue</td>
             <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
             <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn btn-primary">></a></td>
+            <td><a href="#" class="btn">></a></td>
             </tr>
             <tr>
             <th scope="row">3</th>
@@ -104,7 +117,7 @@
             <td>Campak</td>
             <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
             <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn btn-primary">></a></td>
+            <td><a href="#" class="btn">></a></td>
             </tr>
         </tbody>
     </table>
