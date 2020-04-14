@@ -46,14 +46,14 @@
 </head>
 <body style="background-color:#f4f4f4">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <a class="navbar-brand" href="#"><img src="assets/image/Logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= site_url('HomeController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?= site_url('HomeAdminController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -67,7 +67,7 @@
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Obat</h5>
 
@@ -76,7 +76,7 @@
             </div>
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Rumah Sakit</h5>
 
@@ -85,9 +85,9 @@
             </div>
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat">Input Imunisasi</h5>
+                        <h5 class="card-title" id="Input-Obat" href ="">Input Imunisasi</h5>
 
                     </div>
                 </div></a>
@@ -100,7 +100,7 @@
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Obat</h5>
 
@@ -109,7 +109,7 @@
             </div>
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Rumah Sakit</h5>
                     </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="col-lg-4">
                 <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="assets/image/person-24px.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/person-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Pelanggan</h5>
                     </div>
