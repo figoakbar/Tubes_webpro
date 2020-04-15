@@ -32,13 +32,13 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action="<?= site_url('inputRSController/addHospital')?>" method="post">
-                <h1><img src="../assets/image/Logo.png">Rumah Sakit</h1><br>
+            <form class=" border border-light p-5" action="<?= site_url('')?>" method="post">
+                <h1><img src="../assets/image/Logo.png">Edit Rumah Sakit</h1><br>
                 <p>Nama Rumah Sakit</p>
                 <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
                 <p>Image belum ada database</p>
                 <!-- input button -->
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
+                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
                 <a href="<?= site_url('HomeRumahSakitController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
         </div>

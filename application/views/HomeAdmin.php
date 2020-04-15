@@ -78,7 +78,7 @@
         <h3 style="text-align: center;"> DATA </h3>
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
-                <a href="<?= site_url('InputObatController')?>"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeObatController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Obat</h5>
@@ -87,7 +87,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href="<?= site_url('InputRSController')?>"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeRumahSakitController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Rumah Sakit</h5>
@@ -116,7 +116,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href="<?= site_url('inputImunisasijadwalController')?>"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeImunisasiJadwalController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/event_note-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Jadwal</h5>

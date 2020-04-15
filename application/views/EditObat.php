@@ -25,21 +25,22 @@
         }
         body{
             padding: 0px;
-            background-image: url('https://izkey.com/wp-content/uploads/2019/03/rumah-sakit-di-jakarta-1038x576.jpg');
+            background-image: url('https://cdn0-production-images-kly.akamaized.net/mznHlYed0VeT1lxLZyxSg-PzCiI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1583162/original/090823200_1493797707-Jangan-Gunakan-Antibiotik-Sembarangan-Ini-Alasannya.jpg');
             background-size:cover
         }
 
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action="<?= site_url('inputRSController/addHospital')?>" method="post">
-                <h1><img src="../assets/image/Logo.png">Rumah Sakit</h1><br>
-                <p>Nama Rumah Sakit</p>
-                <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
-                <p>Image belum ada database</p>
+            <form class=" border border-light p-5" action="<?= site_url('')?>" method = "post">
+                <h1><img src="../assets/image/Logo.png">Edit Obat</h1><br>
+                <p>Nama Obat</p>
+                <input type="text" name="namaobat" class="form-control mb-4">
+                <p>Jenis Obat</p>
+                <input type="text" name="jenisobat" class="form-control mb-4">
                 <!-- input button -->
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeRumahSakitController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
+                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
+                <a href="<?= site_url('HomeObatController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
         </div>
 </body>

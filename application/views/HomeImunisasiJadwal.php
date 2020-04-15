@@ -32,15 +32,26 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action='' method='post'>
-                <h1><img src="../assets/image/Logo.png">Edit Imunisasi</h1><br><br>
-                <p>Nama Imunisasi</p>
-                <input type="name" name="namaimunisasi" class="form-control mb-4">
-                <p>Jenis Imunisasi</p>
-                <input type="text" name="jenisimunisasi" class="form-control mb-4">
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
-                <a href="<?= site_url('HomeImunisasiController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
-            </form>    
+            <form class=" border border-light p-5">
+                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
+                <table class= "table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Jadwal Imunisasi</th>
+                        <th scope="col">ID Imunisasi</th>
+                        <th scope="col">ID Rumah Sakit</th>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="<?= site_url('inputImunisasiJadwalController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Imunisasi</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
+            </form>
         </div>
 </body>
 

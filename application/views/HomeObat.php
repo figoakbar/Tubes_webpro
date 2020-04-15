@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
-    <title>Input Obat KidsCare</title>
+    <title>Admin Page</title>
 </head>
 <style type="text/css">
         #nav-item a {
@@ -32,18 +32,26 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            
-            <form class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicine')?>" method = "post">
-                <h1><img src="../assets/image/Logo.png">Obat</h1><br>
-                <p>Nama Obat</p>
-                <input type="text" name="namaobat" class="form-control mb-4">
-                <p>Jenis Obat</p>
-                <input type="text" name="jenisobat" class="form-control mb-4">
-                <!-- input button -->
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeObatController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
+            <form class=" border border-light p-5">
+                <h1><img src="../assets/image/Logo.png">Obat</h1><br><br>
+                <table class= "table">
+                    <thead>
+                        <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Nama Obat</th>
+                        <th scope="col">Jenis Obat</th>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="<?= site_url('InputObatController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Obat</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
-    
         </div>
 </body>
 
