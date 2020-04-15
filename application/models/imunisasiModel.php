@@ -17,6 +17,17 @@ class imunisasiModel extends CI_Model{
         return $this->db->get('imunisasi')->row_array();
     }
 
+    public function cekImunisasi($nama){
+        $this->db->where('nama_imunisasi',$nama);
+        $query = $this->db->get('imunisasi');
+        if($query->num_rows() >= 0){  
+            return true;  
+        }  
+        else{  
+            return false;       
+        }  
+    }
+
     public function insertImunisasi($data){
         return $this->db->insert('imunisasi',$data);
     }
@@ -39,5 +50,25 @@ class imunisasiModel extends CI_Model{
 
     public function getAllJadwalImunisasi(){
         return $this->db->get('imunisasiJadwal')->result_array();
+    }
+
+    // menambahkan jadwal imunisasi ini juga lupa PKnya nanti di perbaiki hehe
+    public function insertDataImunisasiRS($data){
+        return $this->db->insert('imunisasijadwal',$data);
+    }
+
+    public function updateImunisasiRS($id,$data){
+        $this->db->where('id_imunisasijadwal',$id);
+        $this->db->update('imunisasijadwal',$data);
+    }
+
+    public function getDataImunisasiRS($id){
+        $this->db->where('id_imunisasijadwal',$id);
+        return $this->db->get('imunisasijadwal')->result_array();
+    }
+
+    public function deleteImunisasiRS($id){
+        $this->db->where('id_imunisasijadwal',$id);
+        return $this->db->delete('imunisasijadwal');
     }
 }

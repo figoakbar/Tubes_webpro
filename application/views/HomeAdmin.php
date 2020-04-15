@@ -75,7 +75,7 @@
         <h3 style="text-align: center;"> INPUT DATA </h3>
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
-                <a href="https://makassar.terkini.id/aset/images/sites/2/2018/04/blog-1-e1524635651393.jpg"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('InputObatController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Obat</h5>
@@ -84,7 +84,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href="<?= site_url('InputObatController')?>"><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('InputRSController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Input Rumah Sakit</h5>
