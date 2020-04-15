@@ -33,7 +33,7 @@
 <body>
             <div class="card mx-auto" id="login">
             <form class=" border border-light p-5">
-                <h1><img src="../assets/image/Logo.png">Imunisasi</h1><br><br>
+                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
                 <table class= "table">
                     <thead>
                         <tr>
