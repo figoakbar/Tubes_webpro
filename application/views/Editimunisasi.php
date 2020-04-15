@@ -38,7 +38,7 @@
                 <input type="name" name="namaimunisasi" class="form-control mb-4">
                 <p>Jenis Imunisasi</p>
                 <input type="text" name="jenisimunisasi" class="form-control mb-4">
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
+                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
                 <a href="<?= site_url('HomeImunisasiController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>    
         </div>
