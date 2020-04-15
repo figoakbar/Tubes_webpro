@@ -17,7 +17,18 @@ class modelRS extends CI_Model{
         return $this->db->get('rumahsakit')->row_array();
     }
 
-    public function insertRSt($data){
+    public function cekRS($nama){
+        $this->db->where('nama_rs',$nama);
+        $query = $this->db->get('rumahsakit');
+        if($query->num_rows() >= 0){  
+            return true;  
+        }  
+        else{  
+            return false;       
+        }  
+    }
+
+    public function insertRS($data){
         return $this->db->insert('rumahsakit',$data);
     }
 
@@ -51,23 +62,5 @@ class modelRS extends CI_Model{
         return $this->db->delete('daftarObat');
     }
 
-    // menambahkan jadwal imunisasi ini juga lupa PKnya nanti di perbaiki hehe
-    public function insertDataImunisasiRS($data){
-        return $this->db->insert('imunisasijadwal',$data);
-    }
-
-    public function updateImunisasiRS($id,$data){
-        $this->db->where('id_imunisasijadwal',$id);
-        $this->db->update('imunisasijadwal',$data);
-    }
-
-    public function getDataImunisasiRS($id){
-        $this->db->where('id_imunisasijadwal',$id);
-        return $this->db->get('imunisasijadwal')->result_array();
-    }
-
-    public function deleteImunisasiRS($id){
-        $this->db->where('id_imunisasijadwal',$id);
-        return $this->db->delete('imunisasijadwal');
-    }
+    
 }
