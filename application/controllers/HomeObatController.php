@@ -6,7 +6,7 @@ class HomeObatController extends CI_Controller{
     function __construct()
     {
         parent::__construct(); 
-        $this->load->model('InputObatModel');    
+        $this->load->model('ModelObat');    
     }
  
     public function index()
