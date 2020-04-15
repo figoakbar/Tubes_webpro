@@ -55,6 +55,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= site_url('HomeAdminController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Data Pelanggan <span class="sr-only">(current)</span></a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
@@ -96,7 +99,7 @@
                 <a href="<?= site_url('HomeImunisasiController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat" href ="">Data Pesan Imunisasi</h5>
+                        <h5 class="card-title" id="Input-Obat" href ="">Data Imunisasi</h5>
 
                     </div>
                 </div></a>
@@ -105,15 +108,15 @@
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
                 <a href=""><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="../assets/image/person-24px.svg" alt="Card image cap" id="card-gambar">
+                    <img class="card-img-top" src="../assets/image/healing-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat">Data Pelanggan</h5>
+                        <h5 class="card-title" id="Input-Obat">Data Pesan Imunisasi</h5>
 
                     </div>
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href=""><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('inputImunisasijadwalController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/event_note-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Jadwal</h5>
