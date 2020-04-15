@@ -35,6 +35,21 @@
             
             <form class=" border border-light p-5">
                 <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br>
+                <table class= "table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Jadwal Imunisasi</th>
+                        <th scope="col">ID Imunisasi</th>
+                        <th scope="col">ID Rumah Sakit</th>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
                 <p>JadwalImunisasi</p>
                 <input type="date" id="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
                 <p>Id Imunisasi</p>
@@ -43,7 +58,7 @@
                 <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeImunisasiController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
     
         </div>

@@ -32,14 +32,31 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <!-- Default form login -->
             <form class=" border border-light p-5">
                 <h1><img src="../assets/image/Logo.png">Imunisasi</h1><br><br>
+                <table class= "table">
+                    <thead>
+                        <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Nama Imunisasi</th>
+                        <th scope="col">Jenis Imunisasi</th>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Demam Berdarah</td>
+                        <td>Dengue</td>
+                        <td><a href="#">Delete</a></td>
+                        <td><a href="#">Edit</a></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <a href="<?= site_url('InputImunisasiController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Imunisasi</a>
-                <a href="<?= site_url('inputImunisasiJadwalController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Jadwal</a>
-                <a href="<?= site_url('HomeAdminController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
-            <!-- Default form login -->
         </div>
 </body>
 

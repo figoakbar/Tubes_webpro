@@ -33,12 +33,14 @@
 <body>
             <div class="card mx-auto" id="login">
             <form class=" border border-light p-5" action='<?= site_url('InputImunisasiController/addImunization')?>' method='post'>
-                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
+                <h1><img src="../assets/image/Logo.png">Input Imunisasi</h1><br><br>
                 <p>Nama Imunisasi</p>
                 <input type="name" name="namaimunisasi" class="form-control mb-4">
+                <p>Jenis Imunisasi</p>
+                <input type="text" name="jenisimunisasi" class="form-control mb-4">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeImunisasiController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeImunisasiController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>    
         </div>
 </body>
