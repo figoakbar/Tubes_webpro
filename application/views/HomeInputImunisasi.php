@@ -37,7 +37,7 @@
                 <h1><img src="../assets/image/Logo.png">Imunisasi</h1><br><br>
                 <a href="<?= site_url('InputImunisasiController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Imunisasi</a>
                 <a href="<?= site_url('inputImunisasiJadwalController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Jadwal</a>
-                <a href="<?= site_url('HomeAdminController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
             <!-- Default form login -->
         </div>
