@@ -46,6 +46,11 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                     </tbody>
                 </table>

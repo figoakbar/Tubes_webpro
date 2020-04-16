@@ -46,11 +46,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                        <th scope="row">1</th>
-                        <td>Demam Berdarah</td>
-                        <td>Dengue</td>
-                        <td><a href="#">Delete</a></td>
-                        <td><a href="#">Edit</a></td>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                     </tbody>
                 </table>

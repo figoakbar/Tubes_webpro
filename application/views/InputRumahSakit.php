@@ -36,7 +36,9 @@
                 <h1><img src="../assets/image/Logo.png">Rumah Sakit</h1><br>
                 <p>Nama Rumah Sakit</p>
                 <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
-                <p>Image belum ada database</p>
+                <label>Gambar</label><br>
+                <input type="file" class="form-control" name="foto">
+                <br>
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
                 <a href="<?= site_url('HomeRumahSakitController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
