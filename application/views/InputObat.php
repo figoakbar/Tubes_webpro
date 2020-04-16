@@ -33,7 +33,7 @@
 <body>
             <div class="card mx-auto" id="login">
             
-            <form action="prosesupload.php" method="POST" enctype="multipart/form-data" class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicine')?>" method = "post">
+            <form enctype="multipart/form-data" class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicineFinal')?>" method = "post" >
                 <h1><img src="../assets/image/Logo.png">Obat</h1><br>
                 <p>Nama Obat</p>
                 <input type="text" name="namaobat" class="form-control mb-4">
