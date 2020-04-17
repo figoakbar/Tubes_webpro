@@ -16,6 +16,7 @@ class InputImunisasiController extends CI_Controller {
 
     public function addImunization(){
         $nama = $this->input->post('namaimunisasi');
+        $jenis = $this->input->post('jenisimunisasi')
         if($nama != ''){
             if($this->imunisasiModel->cekImunisasi($nama)){
                 $data = array(
