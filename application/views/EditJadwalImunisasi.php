@@ -25,24 +25,27 @@
         }
         body{
             padding: 0px;
-            background-image: url('https://izkey.com/wp-content/uploads/2019/03/rumah-sakit-di-jakarta-1038x576.jpg');
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-medical-doctor-science-background-backgroundbackgrounddoctorsmedicalmedicinehealth-image_68227.jpg');
             background-size:cover
         }
 
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action="<?= site_url('inputRSController/addHospitalFinal')?>" method="post">
-                <h1><img src="../assets/image/Logo.png">Rumah Sakit</h1><br>
-                <p>Nama Rumah Sakit</p>
-                <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
-                <label>Gambar</label><br>
-                <input type="file" class="form-control" name="foto">
-                <br>
+            
+            <form class=" border border-light p-5">
+                <h1><img src="../assets/image/Logo.png">Edit Jadwal Imunisasi</h1><br>
+                <p>JadwalImunisasi</p>
+                <input type="date" id="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
+                <p>Id Imunisasi</p>
+                <input type="text" name="idImunisasi" class="form-control mb-4" placeholder="Id Imunisasi">
+                <p>Id Rumah Sakit</p>
+                <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
                 <!-- input button -->
-                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeRumahSakitController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
+                <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
+                <a href="<?= site_url('HomeImunisasiJadwalController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
+    
         </div>
 </body>
 

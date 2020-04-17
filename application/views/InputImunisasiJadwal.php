@@ -43,7 +43,7 @@
                 <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeImunisasiController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeImunisasiJadwalController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
     
         </div>

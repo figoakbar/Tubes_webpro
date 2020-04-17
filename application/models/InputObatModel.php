@@ -8,14 +8,14 @@ class InputObatModel extends CI_Model{
     }
 
     public function insertObat($data){
-        return $this->db->insert('Obat',$data);
+        return $this->db->insert('obat',$data);
     }
 
     public function cekObat($nama,$jenisObat){
         $this->db->where('nama_obat',$nama);
         $this->db->where('jenis_obat',$jenisObat);
         $query = $this->db->get('obat');
-        if($query->num_rows() >= 0){  
+        if($query->num_rows() > 0){  
             return true;  
         }  
         else{  

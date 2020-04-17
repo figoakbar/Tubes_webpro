@@ -55,6 +55,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= site_url('HomeAdminController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Data Pelanggan <span class="sr-only">(current)</span></a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
@@ -72,43 +75,10 @@
         </div>
     </nav>
     <section id="pilihan-input" class="container" style="margin-bottom:40px">
-        <h3 style="text-align: center;"> INPUT DATA </h3>
+        <h3 style="text-align: center;"> DATA </h3>
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
-                <a href="<?= site_url('InputObatController')?>"><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
-                    <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat">Input Obat</h5>
-
-                    </div>
-                </div></a>
-            </div>
-            <div class="col-lg-4">
-                <a href="<?= site_url('InputRSController')?>"><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
-                    <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat">Input Rumah Sakit</h5>
-
-                    </div>
-                </div></a>
-            </div>
-            <div class="col-lg-4">
-                <a href="<?= site_url('HomeImunisasiController')?>"><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="../assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
-                    <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat" href ="">Input Imunisasi</h5>
-
-                    </div>
-                </div></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="pilihan-view" class="container" style="margin-bottom:40px">
-        <h3 style="text-align: center;"> VIEW DATA </h3>
-        <div class="row" style="margin-bottom:30px">
-            <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeObatController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/drag_indicator-black-18dp.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Obat</h5>
@@ -117,18 +87,49 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('HomeRumahSakitController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/local_hospital-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Rumah Sakit</h5>
+
                     </div>
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a><div class="card container " style="width: 18rem;">
-                    <img class="card-img-top" src="../assets/image/person-24px.svg" alt="Card image cap" id="card-gambar">
+                <a href="<?= site_url('HomeImunisasiController')?>"><div class="card container " style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/image/colorize-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
-                        <h5 class="card-title" id="Input-Obat">Data Pelanggan</h5>
+                        <h5 class="card-title" id="Input-Obat" href ="">Data Imunisasi</h5>
+
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:30px">
+            <div class="col-lg-4">
+                <a href=""><div class="card container " style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/image/healing-24px.svg" alt="Card image cap" id="card-gambar">
+                    <div class="card-body">
+                        <h5 class="card-title" id="Input-Obat">Data Pesan Imunisasi</h5>
+
+                    </div>
+                </div></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="<?= site_url('HomeImunisasiJadwalController')?>"><div class="card container " style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/image/event_note-24px.svg" alt="Card image cap" id="card-gambar">
+                    <div class="card-body">
+                        <h5 class="card-title" id="Input-Obat">Data Jadwal</h5>
+
+                    </div>
+                </div></a>
+            </div>
+            <div class="col-lg-4">
+                <a href=""><div class="card container " style="width: 18rem;">
+                    <img class="card-img-top" src="../assets/image/shopping_cart-24px.svg" alt="Card image cap" id="card-gambar">
+                    <div class="card-body">
+                        <h5 class="card-title" id="Input-Obat" href ="">Data Pesan Obat</h5>
+
                     </div>
                 </div></a>
             </div>
@@ -136,34 +137,7 @@
     </section>
 
     
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-                }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        } 
-    
-    </script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->

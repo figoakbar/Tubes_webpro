@@ -33,30 +33,29 @@
 <body>
             <div class="card mx-auto" id="login">
             <form class=" border border-light p-5">
-                <h1><img src="../assets/image/Logo.png">Imunisasi</h1><br><br>
+                <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br><br>
                 <table class= "table">
                     <thead>
                         <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nama Imunisasi</th>
-                        <th scope="col">Jenis Imunisasi</th>
-                        <th scope="col">Edit</th>
+                        <th scope="col">Jadwal Imunisasi</th>
+                        <th scope="col">ID Imunisasi</th>
+                        <th scope="col">ID Rumah Sakit</th>
                         <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><?php foreach($data_imunisasi as $di) : ?>
-                            <th scope="row"><?= $di['id_imunisasi']?></th>
-                            <td><?= $di['nama_imunisasi']?></td>
-                            <td><?= $di['jenis_imunisasi']?></td>
-                            <td><a  href="<?= base_url(); ?>EditImunisasiController/editImunization/<?= $di['id_imunisasi'] ?>" type="submit" style="border-radius: 10px;">Edit</a></td>
-                            <td><a href="<?= base_url(); ?>EditImunisasiController/deleteImunization/<?= $di['id_imunisasi'] ?>" type="submit" style="border-radius: 10px;">Delete</a></td></td>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
-                        <?php endforeach; ?>
                     </tbody>
-                    </table>
-                            <a href="<?= site_url('InputRSController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Rumah Sakit</a>
-                            <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a> 
+                </table>
+                <a href="<?= site_url('inputImunisasiJadwalController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Jadwal Imunisasi</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
         </div>
 </body>

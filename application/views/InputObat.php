@@ -33,15 +33,18 @@
 <body>
             <div class="card mx-auto" id="login">
             
-            <form class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicine')?>" method = "post">
+            <form enctype="multipart/form-data" class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicineFinal')?>" method = "post" >
                 <h1><img src="../assets/image/Logo.png">Obat</h1><br>
                 <p>Nama Obat</p>
                 <input type="text" name="namaobat" class="form-control mb-4">
                 <p>Jenis Obat</p>
                 <input type="text" name="jenisobat" class="form-control mb-4">
-                <!-- input button -->
+                <label>Gambar</label><br>
+                <input type="file" class="form-control" name="foto">
+                <br>
+               <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
-                <a href="<?= site_url('HomeAdminController') ?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Back</a>
+                <a href="<?= site_url('HomeObatController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>
             </form>
     
         </div>
