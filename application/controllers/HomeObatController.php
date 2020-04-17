@@ -11,7 +11,8 @@ class HomeObatController extends CI_Controller{
  
     public function index()
     {
-        $this->load->view('HomeObat.php');
+        $data['data_obat'] = $this->ModelObat->getAllData();
+        $this->load->view('HomeObat.php',$data);
     }
 
 }

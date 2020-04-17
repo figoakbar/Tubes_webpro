@@ -11,7 +11,8 @@ class HomeRumahSakitController extends CI_Controller{
  
     public function index()
     {
-        $this->load->view('HomeRumahSakit.php');
+        $data['data_rumahsakit'] = $this->modelRS->getAllData();
+        $this->load->view('HomeRumahSakit.php',$data);
     }
 
 }

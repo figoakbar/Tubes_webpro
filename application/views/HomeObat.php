@@ -37,16 +37,22 @@
                 <table class= "table">
                     <thead>
                         <tr>
-                        <th scope="col">No.</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Nama Obat</th>
                         <th scope="col">Jenis Obat</th>
-                        <th scope="col">Delete</th>
                         <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr><?php foreach($data_obat as $do) : ?>
+                            <th scope="row"><?= $do['id_obat']?></th>
+                            <td><?= $do['nama_obat']?></td>
+                            <td><?= $do['jenis_obat']?></td>
+                            <td><a  href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
                 <a href="<?= site_url('InputObatController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Obat</a>
