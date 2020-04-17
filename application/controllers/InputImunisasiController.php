@@ -16,11 +16,12 @@ class InputImunisasiController extends CI_Controller {
 
     public function addImunization(){
         $nama = $this->input->post('namaimunisasi');
-        $jenis = $this->input->post('jenisimunisasi')
+        $jenis = $this->input->post('jenisimunisasi');
         if($nama != ''){
             if($this->imunisasiModel->cekImunisasi($nama)){
                 $data = array(
-                    'nama_imunisasi' => $nama
+                    'nama_imunisasi' => $nama,
+                    'jenis_imunisasi' => $jenis
                 );
                 $this->imunisasiModel->insertImunisasi($data);
                 redirect('HomeImunisasiController');

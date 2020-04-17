@@ -54,10 +54,10 @@
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
-                    </table>
-                            <a href="<?= site_url('InputRSController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Rumah Sakit</a>
-                            <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a> 
-            </form>
+                </table>
+                <a href="<?= site_url('InputImunisasiController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Imunisasi</a>
+                <a href="<?= site_url('HomeAdminController') ?>" type="submit" style="border-radius: 10px;"> < Back</a> 
+             </form>
         </div>
 </body>
 
