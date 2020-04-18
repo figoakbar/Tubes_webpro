@@ -12,23 +12,6 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
     <style>
-        #carousel {
-            margin-top: 0px;
-            padding-top: 0px;
-        }
-        header{
-            margin-bottom: -3px;
-            padding-bottom: 0px;
-        }
-        #cari-posyandu{
-            margin-top: 50px;
-            margin-bottom: 60px;
-            width: 60%
-        }
-        #cari-posyandu span{
-            padding-top: 15px;
-            font-size: 14px;
-        }
         #pilihan-input {
             margin-bottom: 100px;
             margin-top: 50px;
@@ -56,7 +39,7 @@
                     <a class="nav-link" href="<?= site_url('HomeAdminController')?>" style="color: #17A1EF;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Data Pelanggan <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?= site_url('DataPelangganController')?>">Data Pelanggan <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
