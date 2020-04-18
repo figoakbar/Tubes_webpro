@@ -37,7 +37,7 @@ class imunisasiModel extends CI_Model{
         return $this->db->update('imunisasi',$data);
     }
 
-    public function deleteImnunisasi($id){
+    public function deleteImunisasi($id){
         $this->db->where('id_imunisasi',$id);
         return $this->db->delete('imunisasi');
     }
@@ -62,13 +62,8 @@ class imunisasiModel extends CI_Model{
         $this->db->update('imunisasijadwal',$data);
     }
 
-    public function getDataImunisasiRS($id){
-        $this->db->where('id_imunisasijadwal',$id);
-        return $this->db->get('imunisasijadwal')->result_array();
-    }
-
     public function deleteImunisasiRS($id){
-        $this->db->where('id_imunisasijadwal',$id);
+        $this->db->where('id_imunisasi',$id);
         return $this->db->delete('imunisasijadwal');
     }
 }

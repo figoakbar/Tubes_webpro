@@ -32,7 +32,7 @@ class InputRSController extends CI_Controller{
             $cek = array('upload_data' => $this->upload->data());
         }
         
-        if(!$this->InputObatModel->cekObat($nama,$jenis)){
+        if(!$this->modelRS->cekRS($nama)){
             $uploadData = array('upload_data' => $this->upload->data());
             $data = array(
                 'nama_rs' => $nama,
@@ -43,7 +43,7 @@ class InputRSController extends CI_Controller{
         }else{
             $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
         }
-        redirect('InputRSController');
+        redirect('HomeRumahSakitController');
             
         
     }

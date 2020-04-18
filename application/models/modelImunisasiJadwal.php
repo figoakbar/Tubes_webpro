@@ -28,7 +28,7 @@ class modelImunisasiJadwal extends CI_Model{
     public function checkRS($id){
         $this->db->where('id_rumahsakit',$id);
         $query = $this->db->get('rumahsakit');
-        if($query->num_rows() >= 0){  
+        if($query->num_rows() > 0){  
             return true;  
         }  
         else{  
@@ -39,7 +39,7 @@ class modelImunisasiJadwal extends CI_Model{
     public function checkImunisasi($id){
         $this->db->where('id_imunisasi',$id);
         $query = $this->db->get('imunisasi');
-        if($query->num_rows() >= 0){  
+        if($query->num_rows() > 0){  
             return true;  
         }  
         else{  

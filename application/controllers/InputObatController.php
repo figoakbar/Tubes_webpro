@@ -43,7 +43,7 @@ class InputObatController extends CI_Controller{
         }else{
             $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
         }
-        redirect('InputObatController');
+        redirect('HomeObatController');
         
     }
 

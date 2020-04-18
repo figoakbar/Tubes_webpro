@@ -20,7 +20,7 @@ class modelRS extends CI_Model{
     public function cekRS($nama){
         $this->db->where('nama_rs',$nama);
         $query = $this->db->get('rumahsakit');
-        if($query->num_rows() >= 0){  
+        if($query->num_rows() > 0){  
             return true;  
         }  
         else{  

@@ -20,8 +20,7 @@ class InputImunisasiJadwalController extends CI_Controller {
         $jadwal = $this->input->post('JadwalImunisasi');
         $cekRS = $this->modelImunisasiJadwal->checkRS($idRS);
         $cekImunisasi = $this->modelImunisasiJadwal->checkImunisasi($idImunisasi);
-
-        if($cekRS && $cekImunisasi){
+        if($cekRS AND $cekImunisasi){
             $data = array(
                 'jadwal_imunisasi' => $jadwal,
                 'id_imunisasi' => $idImunisasi,
