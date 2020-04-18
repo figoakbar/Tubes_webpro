@@ -32,8 +32,10 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action='' method='post'>
-                <h1><img src="../assets/image/Logo.png">Edit Imunisasi</h1><br><br>
+            <form class=" border border-light p-5" action='<?= site_url('EditImunisasiController/editImunization')?>' method='post'>
+                <h1><img src="<?php echo $this->config->item('base_url'); ?>/assets/image/Logo.png">Edit Imunisasi</h1><br><br>
+                <p>ID Imunisasi</p>
+                <input type="name" name="idimunisasi" class="form-control mb-4" placeholder ="<?= $id ?>">
                 <p>Nama Imunisasi</p>
                 <input type="name" name="namaimunisasi" class="form-control mb-4">
                 <p>Jenis Imunisasi</p>

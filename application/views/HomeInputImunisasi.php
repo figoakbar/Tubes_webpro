@@ -49,7 +49,7 @@
                             <th scope="row"><?= $di['id_imunisasi']?></th>
                             <td><?= $di['nama_imunisasi']?></td>
                             <td><?= $di['jenis_imunisasi']?></td>
-                            <td><a  href="<?= base_url(); ?>EditImunisasiController/editImunization/<?= $di['id_imunisasi'] ?>" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a  href="<?= site_url('EditImunisasiController/index/'.$di['id_imunisasi'])?>" type="submit" style="border-radius: 10px;">Edit</a></td>
                             <td><a href="<?= base_url(); ?>EditImunisasiController/deleteImunization/<?= $di['id_imunisasi'] ?>" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                         <?php endforeach; ?>
