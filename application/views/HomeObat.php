@@ -49,7 +49,7 @@
                             <th scope="row"><?= $do['id_obat']?></th>
                             <td><?= $do['nama_obat']?></td>
                             <td><?= $do['jenis_obat']?></td>
-                            <td><a  href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a  href="<?= site_url('EditObatController/index/'.$do['id_obat'])?>" type="submit" style="border-radius: 10px;">Edit</a></td>
                             <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                         <?php endforeach; ?>

@@ -6,22 +6,24 @@ class EditObatController extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('ModelObat');
+        $this->load->model('inputObatModel');
      
     }
  
-    public function index(){
-        $this->load->view('EditObat.php');
+    public function index($id){
+        $data['id'] = $id;
+        $this->load->view('EditObat.php',$data);
     }
 
-    public function editMedicine($id){
+    public function editMedicine(){
         $nama = $this->input->post('namaobat');
         $jenis = $this->input->post('jenisobat');
+        $id = $this->input->post('idobat');
         $data = array(
             'nama_obat' => $nama,
             'jenis_obat' => $jenis
         );
-        $this->imunisasiModel->updateObat($id,$data)
-        redirect('HomeObatController')
+        $this->inputObatModel->updateDataObat($id,$data);
+        redirect('HomeObatController');
     }
 }

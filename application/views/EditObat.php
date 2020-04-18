@@ -32,8 +32,10 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action="<?= site_url('')?>" method = "post">
-                <h1><img src="../assets/image/Logo.png">Edit Obat</h1><br>
+            <form class=" border border-light p-5" action="<?= site_url('EditObatController/editMedicine')?>" method = "post">
+                <h1><img src="<?php echo $this->config->item('base_url'); ?>/assets/image/Logo.png">Edit Obat</h1><br>
+                <p>ID Obat</p>
+                <input type="name" name="idobat" class="form-control mb-4" placeholder ="<?= $id ?>">
                 <p>Nama Obat</p>
                 <input type="text" name="namaobat" class="form-control mb-4">
                 <p>Jenis Obat</p>

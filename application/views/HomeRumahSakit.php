@@ -44,10 +44,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <<tr><?php foreach($data_rumahsakit as $drs) : ?>
+                        <tr><?php foreach($data_rumahsakit as $drs) : ?>
                             <th scope="row"><?= $drs['id_rumahsakit']?></th>
                             <td><?= $drs['nama_rs']?></td>
-                            <td><a  href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a  href="<?= site_url('EditRSController/index/'.$drs['id_rumahsakit'])?>" type="submit" style="border-radius: 10px;">Edit</a></td>
                             <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                         <?php endforeach; ?>

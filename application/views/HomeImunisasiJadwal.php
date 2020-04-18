@@ -45,13 +45,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="" type="submit" style="border-radius: 10px;">Edit</a></td>
+                    <tr><?php foreach($data_jadwal as $dj) : ?>
+                            <th scope="row"><?= $dj['jadwal_imunisasi']?></th>
+                            <th scope="row"><?= $dj['id_imunisasi']?></th>
+                            <td><?= $dj['id_rs']?></td>
+                            <td><a  href="" type="submit" style="border-radius: 10px;">Edit</a></td>
                             <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
                 <a href="<?= site_url('inputImunisasiJadwalController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input Jadwal Imunisasi</a>

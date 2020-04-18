@@ -11,7 +11,8 @@ class HomeImunisasiJadwalController extends CI_Controller {
     }
  
     public function index(){
-        $this->load->view('HomeImunisasiJadwal.php');
+        $data['data_jadwal'] = $this->imunisasiModel->getAllJadwalImunisasi();
+        $this->load->view('HomeImunisasiJadwal.php',$data);
     }
 
 }

@@ -31,12 +31,11 @@
 
 </style>
 <body>
-            <div class="card mx-auto" id="login">
-            
-            <form class=" border border-light p-5">
+            <div class="card mx-auto" id="login">          
+            <form class=" border border-light p-5" action="<?= site_url('inputImunisasiJadwalController/addSchedule')?>" method="post">
                 <h1><img src="../assets/image/Logo.png">Jadwal Imunisasi</h1><br>
                 <p>JadwalImunisasi</p>
-                <input type="date" id="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
+                <input type="date" name="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
                 <p>Id Imunisasi</p>
                 <input type="text" name="idImunisasi" class="form-control mb-4" placeholder="Id Imunisasi">
                 <p>Id Rumah Sakit</p>

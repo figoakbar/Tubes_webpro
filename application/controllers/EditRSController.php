@@ -10,17 +10,19 @@ class EditRSController extends CI_Controller {
      
     }
  
-    public function index(){
-        $this->load->view('EditRumahSakit.php');
+    public function index($id){
+        $data['id'] = $id;
+        $this->load->view('EditRumahSakit.php',$data);
     }
 
     //belum fitur update picture juga hehe :) 
-    public function editRS($id){
+    public function editHospital(){
         $nama = $this->input->post('namaRS');
+        $id = $this->input->post('idRS');
         $data = array(
-            'namaRS' => $nama,
+            'nama_rs' => $nama,
         );
-        $this->imunisasiModel->updateRS($id,$data)
-        redirect('HomeRumahSakitController')
+        $this->ModelRS->updateRS($id,$data);
+        redirect('HomeRumahSakitController');
     }
 }

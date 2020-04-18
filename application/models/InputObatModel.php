@@ -34,7 +34,7 @@ class InputObatModel extends CI_Model{
     }
 
     
-    public function updateObat($id,$data){
+    public function updateDataObat($id,$data){
         $this->db->where('id_obat',$id);
         return $this->db->update('Obat',$data);
     }

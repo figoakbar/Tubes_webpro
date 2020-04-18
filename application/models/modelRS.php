@@ -13,7 +13,7 @@ class modelRS extends CI_Model{
     }
 
     public function getRS($id){
-        $this->db->where('id_rs',$id);
+        $this->db->where('id_rumahsakit',$id);
         return $this->db->get('rumahsakit')->row_array();
     }
 
@@ -33,12 +33,12 @@ class modelRS extends CI_Model{
     }
 
     public function updateRS($id,$data){
-        $this->db->where('id_rs',$id);
+        $this->db->where('id_rumahsakit',$id);
         return $this->db->update('rumahsakit',$data);
     }
 
     public function deleteRS($id){
-        $this->db->where('id_rs',$id);
+        $this->db->where('id_rumahsakit',$id);
         return $this->db->delete('rumahsakit');
     }
 
