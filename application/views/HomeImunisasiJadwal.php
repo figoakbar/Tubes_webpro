@@ -40,6 +40,7 @@
                         <th scope="col">Jadwal Imunisasi</th>
                         <th scope="col">ID Imunisasi</th>
                         <th scope="col">ID Rumah Sakit</th>
+                        <th scope="col">Harga</th>
                         <th scope="col">Delete</th>
                         <th scope="col">Edit</th>
                         </tr>
@@ -49,8 +50,9 @@
                             <th scope="row"><?= $dj['jadwal_imunisasi']?></th>
                             <th scope="row"><?= $dj['id_imunisasi']?></th>
                             <td><?= $dj['id_rs']?></td>
-                            <td><a  href="" type="submit" style="border-radius: 10px;">Edit</a></td>
-                            <td><a href="" type="submit" style="border-radius: 10px;">Delete</a></td></td>
+                            <td><?= $dj['harga']?></td>
+                            <td><a  href="<?= site_url('EditJadwalController/index/'.$dj['id_jadwal'])?>" type="submit" style="border-radius: 10px;">Edit</a></td>
+                            <td><a href="<?=  site_url('DeleteController/deleteSchedule/'.$dj['id_jadwal']) ?>" type="submit" style="border-radius: 10px;">Delete</a></td></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>

@@ -34,13 +34,13 @@ class imunisasiModel extends CI_Model{
         return $this->db->insert('imunisasijadwal',$data);
     }
 
-    public function updateImunisasiRS($id,$data){
-        $this->db->where('id_imunisasijadwal',$id);
+    public function updateImunisasiJadwal($id,$data){
+        $this->db->where('id_jadwal',$id);
         $this->db->update('imunisasijadwal',$data);
     }
 
     public function deleteImunisasiRS($id){
-        $this->db->where('id_imunisasijadwal',$id);
+        $this->db->where('id_jadwal',$id);
         return $this->db->delete('imunisasijadwal');
     }
 }

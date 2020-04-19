@@ -6,12 +6,12 @@ class ImunisasiController extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('imunisasiModel');
+        $this->load->model('modelImunisasiJadwal');
      
     }
  
     public function index(){
-        $this->load->view('imunisasi');
+        $data['data_jadwal'] = $this->modelImunisasiJadwal->getAllJadwalImunisasi();
+        $this->load->view('imunisasi',$data);
     }
-
 }

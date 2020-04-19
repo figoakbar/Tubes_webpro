@@ -77,6 +77,7 @@
                 <a class="dropdown-item" href="<?= site_url('homeController/logout')?>">Logout</a>
             </div>
         </div>
+        </div>
         </nav>
     <div class="title" style="padding-bottom: 200px; margin: 0px;">
         <div class="container" style="margin-top: 0px;">
@@ -86,7 +87,6 @@
     <table class="table">
         <thead>
             <tr>
-            <th scope="col">No.</th>
             <th scope="col" style="background-color: #e968ab;">Rumah Sakit</th>
             <th scope="col">Jenis Imunisasi</th>
             <th scope="col" style="background-color: #e968ab;">Jadwal</th>
@@ -95,30 +95,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Rumah Sakit Pondok Indah</td>
-            <td>Influenza</td>
-            <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
-            <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn">></a></td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Rumah Sakit Pondok Indah</td>
-            <td>Dengue</td>
-            <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
-            <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn">></a></td>
-            </tr>
-            <tr>
-            <th scope="row">3</th>
-            <td>Rumah Sakit Pondok Indah</td>
-            <td>Campak</td>
-            <td>20 Maret 2020<br>Pukul: 12.00 - 20.00</td>
-            <td>Rp 70.000,00</td>
-            <td><a href="#" class="btn">></a></td>
-            </tr>
+                <tr><?php foreach($data_jadwal as $dj) : ?>
+                    <td><?= $dj['id_rs']?></td>
+                    <td scope="row"><?= $dj['id_imunisasi']?></th>
+                    <td><?= $dj['jadwal_imunisasi']?></td>
+                    <td><?= $dj['harga']?></td>
+                </tr><?php endforeach; ?>
         </tbody>
     </table>
     <section class="footer">

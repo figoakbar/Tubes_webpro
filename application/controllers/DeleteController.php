@@ -27,4 +27,9 @@ class DeleteController extends CI_Controller {
         redirect('HomeObatController');
     }
 
+    public function deleteSchedule($id){
+        $this->deleteModel->deleteImunisasiJadwal($id);
+        redirect('HomeImunisasiJadwalController');
+    }
+
 }

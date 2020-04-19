@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class InputImunisasiJadwalController extends CI_Controller {
+class EditJadwalController extends CI_Controller {
  
     public function __construct()
     {
@@ -10,11 +10,14 @@ class InputImunisasiJadwalController extends CI_Controller {
      
     }
  
-    public function index(){
-        $this->load->view('inputImunisasiJadwal');
+    public function index($id){
+        $data['id'] = $id;
+        $this->load->view('EditJadwalImunisasi.php',$data);
     }
 
-    public function addSchedule(){
+    
+    public function editJadwalImunisasi(){
+        $id = $this->input->post('id');
         $idImunisasi = $this->input->post('idImunisasi');
         $idRS = $this->input->post('idRS');
         $jadwal = $this->input->post('JadwalImunisasi');
@@ -28,7 +31,7 @@ class InputImunisasiJadwalController extends CI_Controller {
                 'id_rs' => $idRS,    
                 'harga' => $harga            
             );
-            $this->modelImunisasiJadwal->insertJadwalImunisasi($data);
+            $this->modelImunisasiJadwal->updateJadwalImunisasi($id,$data);
             redirect('HomeImunisasiJadwalController');
         }else{
             $this->session->set_flashdata('error_messages','Data Tidak Ada');
