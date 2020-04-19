@@ -96,8 +96,8 @@
         </thead>
         <tbody>
                 <tr><?php foreach($data_jadwal as $dj) : ?>
-                    <td><?= $dj['id_rs']?></td>
-                    <td scope="row"><?= $dj['id_imunisasi']?></th>
+                    <td><?= $dj['nama_rs']?></td>
+                    <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
                     <td><?= $dj['harga']?></td>
                 </tr><?php endforeach; ?>

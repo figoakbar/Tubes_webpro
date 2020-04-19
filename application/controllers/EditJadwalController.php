@@ -25,12 +25,16 @@ class EditJadwalController extends CI_Controller {
         $cekRS = $this->modelImunisasiJadwal->checkRS($idRS);
         $cekImunisasi = $this->modelImunisasiJadwal->checkImunisasi($idImunisasi);
         if($cekRS AND $cekImunisasi){
-            $data = array(
-                'jadwal_imunisasi' => $jadwal,
-                'id_imunisasi' => $idImunisasi,
-                'id_rs' => $idRS,    
-                'harga' => $harga            
-            );
+            $namaRS = $this->modelImunisasiJadwal->nameRS($idRS);
+            $jenisImunisasi = $this->modelImunisasiJadwal->nameImunisasi($idImunisasi);
+                $data = array(
+                    'jadwal_imunisasi' => $jadwal,
+                    'id_imunisasi' => $idImunisasi,
+                    'id_rs' => $idRS,    
+                    'harga' => $harga,
+                    'jenis_imunisasi' => $jenisImunisasi['jenis_imunisasi'],
+                    'nama_rs' => $namaRS['nama_rs']                       
+                );
             $this->modelImunisasiJadwal->updateJadwalImunisasi($id,$data);
             redirect('HomeImunisasiJadwalController');
         }else{

@@ -21,12 +21,16 @@ class InputImunisasiJadwalController extends CI_Controller {
         $harga = $this->input->post('harga');
         $cekRS = $this->modelImunisasiJadwal->checkRS($idRS);
         $cekImunisasi = $this->modelImunisasiJadwal->checkImunisasi($idImunisasi);
+        $namaRS = $this->modelImunisasiJadwal->nameRS($idRS);
+        $jenisImunisasi = $this->modelImunisasiJadwal->nameImunisasi($idImunisasi);
         if($cekRS AND $cekImunisasi){
             $data = array(
                 'jadwal_imunisasi' => $jadwal,
                 'id_imunisasi' => $idImunisasi,
                 'id_rs' => $idRS,    
-                'harga' => $harga            
+                'harga' => $harga,
+                'jenis_imunisasi' => $jenisImunisasi['jenis_imunisasi'],
+                'nama_rs' => $namaRS['nama_rs']                       
             );
             $this->modelImunisasiJadwal->insertJadwalImunisasi($data);
             redirect('HomeImunisasiJadwalController');
