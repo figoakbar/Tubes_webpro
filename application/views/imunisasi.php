@@ -99,7 +99,7 @@
                     <td><?= $dj['nama_rs']?></td>
                     <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
-                    <td><?= $dj['harga']?></td>
+                    <td>Rp. <?= $dj['harga']?>,00</td>
                 </tr><?php endforeach; ?>
         </tbody>
     </table>
