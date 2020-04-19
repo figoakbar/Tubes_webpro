@@ -31,7 +31,6 @@ class EditImunisasiController extends CI_Controller {
                 'jadwal_imunisasi' => $c['jadwal_imunisasi'],
                 'id_imunisasi' => $c['id_imunisasi'],
                 'id_rs' => $c['id_rs'],    
-                'harga' => $c['harga'],
                 'jenis_imunisasi' => $jenis,
                 'nama_rs' => $c['nama_rs']                       
             );
