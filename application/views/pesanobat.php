@@ -80,66 +80,16 @@
                 </div>
                 <div class="row">
                 <div class="col-lg-4">
+                    <?php foreach($data_jadwal as $dj) : ?>
                     <div class="card container" id="card" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
+                        <img class="card-img-top" src="../assets/<?= $dj['picture']?>">
                         <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
-                            <p>Lorem ipsum dolor sit amet..</p>
+                            <h5 class="card-title" id="nama-obat"><?= $dj['nama_obat']?></h5>
+                            <p><?= $dj['jenis_obat']?></p>
                             <a href="#" class="btn btn-primary">Pesan</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="../assets/image/3c3180b212f6b37321e5df5452a34ea4.jpg" alt="Card image cap" id="card-gambar" style="border-radius: 30px;">
-                        <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Tempra Paracetamol</h5>
-                            <p>Lorem ipsum dolor sit amet..</p>
-                            <a href="#" class="btn btn-primary" style="">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card container" style="width: 18rem; border-radius: 30px;">
-                    <img class="card-img-top" src="../assets/image/6507175_13b2f81d-9639-47ec-9135-5c28c7f52e66.jpg" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
-                        <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">OBH Combi</h5>
-                            <p>Lorem ipsum dolor sit amet..</p>
-                            <a href="#" class="btn btn-primary">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="row" style="margin-top: 50px;">
-                <div class="col-lg-4">
-                    <div class="card container " style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
-                        <div class="card-body">
-                                <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
-                                <p>Lorem ipsum dolor sit amet..</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card container" style="width: 18rem;border-radius: 30px;">
-                    <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
-                        <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
-                            <p>Lorem ipsum dolor sit amet..</p>
-                            <a href="#" class="btn btn-primary">Pesan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card container" style="width: 18rem;border-radius: 30px;">
-                        <img class="card-img-top" src="../assets/image/150923423_688a7d67-dda4-41bd-849b-b4194f67a04a_1000_1000.png" alt="Card image cap" id="card-gambar"style="border-radius: 30px;">
-                        <div class="card-body">
-                            <h5 class="card-title" id="nama-obat">Profis Ibuprofen</h5>
-                            <p>Lorem ipsum dolor sit amet..</p>
-                            <a href="#" class="btn btn-primary">Pesan</a>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
