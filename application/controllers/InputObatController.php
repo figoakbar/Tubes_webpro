@@ -17,11 +17,8 @@ class InputObatController extends CI_Controller{
     public function addMedicineFinal(){
         $nama = $this->input->post('namaobat');
         $jenis = $this->input->post('jenisobat');
-        $config['upload_path']          = './assets/uploads'; //isi dengan nama folder temoat menyimpan gambar
+        $config['upload_path']          = './assets/'; //isi dengan nama folder temoat menyimpan gambar
         $config['allowed_types']        =  'jpg|png';//isi dengan format/tipe gambar yang diterima
-        $config['max_size']             =  6024;//isi dengan ukuran maksimum yang bisa di upload
-        $config['max_width']            = '1024'; //isi dengan lebar maksimum gambar yang bisa di upload
-        $config['mac_height']           = '768';//isi dengan panjang maksimum gambar yang bisa di upload
 
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('foto')){
