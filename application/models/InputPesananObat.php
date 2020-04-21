@@ -56,4 +56,5 @@ class imunisasiModel extends CI_Model{
         $this->db->where('id_pesanobat',$id);
         return $this->db->delete('pesanobat');
     }
+    
 }
