@@ -27,6 +27,10 @@
         .nav-item:hover{
             color: #17A1EF;
         }
+        thead{
+            background-color:  #17A1EF;
+            color: white;
+        }
    </style>
    <body>
     <!-- As a heading -->
@@ -51,6 +55,7 @@
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
+            <a href="" style="margin-left: 10px;margin-right: 10px;"data-toggle="modal" data-target="#exampleModal"><img src="../assets/image/shopping_cart-24px.svg" alt=""></a>
             </form>
         </div>
         <div class="dropdown">
@@ -86,12 +91,47 @@
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat"><?= $dj['nama_obat']?></h5>
                             <p><?= $dj['jenis_obat']?></p>
-                            <a href="#" class="btn btn-primary">Pesan</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Pesan
+                            </button>
                         </div>
                     </div>
                     <?php endforeach; ?>
                 </div>
             </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pesanan Anda</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col" style="background-color: #e968ab;">Nama Obat</th>
+                                <th scope="col">Jenis Obat</th>
+                                <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <h5><a href="<?= site_url('PesanObatController')?>">+ Tambah</a></h5>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 30px; background-color: #e968ab;">Close</button>
+                        <a type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('pesananuserController')?>">Beli</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
         </div>
     
     <br>
