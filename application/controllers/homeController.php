@@ -11,7 +11,7 @@ class HomeController extends CI_Controller{
  
     public function index()
     {
-        $this->load->view('pesananuser.php');
+        $this->load->view('Home.php');
     }
 
     function logout()  
