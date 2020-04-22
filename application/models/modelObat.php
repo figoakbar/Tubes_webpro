@@ -14,7 +14,7 @@ class modelObat extends CI_Model{
 
     public function getObat($id){
         $this->db->where('id_obat',$id);
-        return $this->db->get('Obat');
+        return $this->db->get('Obat')->row_array();
     }
 
     public function insertObat($data){
@@ -31,4 +31,18 @@ class modelObat extends CI_Model{
         return $this->db->delete('obat');
     }
 
+    public function getUser($nama){
+        $this->db->where('email',$nama);
+        return $this->db->get('user')->row_array();
+    }
+
+    public function insertDataPesananObat($data){
+        return $this->db->insert('pesanobat',$data);
+    }
+
+
+    public function getPesananObat($id){
+        $this->db->where('id_user',$id);
+        return $this->db->get('pesanobat')->result_array();
+    }
 }

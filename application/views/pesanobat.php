@@ -91,9 +91,7 @@
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat"><?= $dj['nama_obat']?></h5>
                             <p><?= $dj['jenis_obat']?></p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Pesan
-                            </button>
+                            <a href="<?= site_url('pesanObatController/addMedicine/'.$dj['id_obat']) ?>" type="button" style="border-radius: 10px;"> Pesan</a> 
                         </div>
                     </div>
                 </div>
@@ -118,8 +116,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                    <tr>
-                                    </tr>
+                                    <tr><?php foreach($data_modal as $dm) : ?>
+                                        <td><?= $dm['nama_obat']?></td>
+                                        <td scope="row"><?= $dm['jenis_obat']?></th>
+                                </tr><?php endforeach; ?>
                             </tbody>
                         </table>
                         <h5><a href="<?= site_url('PesanObatController')?>">+ Tambah</a></h5>
