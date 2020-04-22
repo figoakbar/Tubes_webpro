@@ -45,4 +45,8 @@ class modelObat extends CI_Model{
         $this->db->where('id_user',$id);
         return $this->db->get('pesanobat')->result_array();
     }
+
+    public function getAllPesananObat(){
+        return $this->db->get('pesanobat')->result_array();
+    }
 }
