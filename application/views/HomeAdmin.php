@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kidscare</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -118,8 +119,25 @@
             </div>
         </div>
     </section>
+    <script>
+      $(document).ready(function(){
+        $('.col-lg-4').hover(
+          function(){
+            $(this).animate({
+              marginTop: "-=1%",
+            },200);
+          },
 
-    
+          function(){
+            $(this).animate({
+              marginTop: "0%",
+            },200);
+          }
+        );
+      });
+    </script>
+
+
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

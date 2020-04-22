@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kidscare</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -57,7 +58,7 @@
             height: 30px;
         }
         #gambar-why img{
-            
+
             margin-bottom: 15px;
             height: 100px;
         }
@@ -90,7 +91,7 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
-                <a href="" style="margin-left: 10px;margin-right: 10px;"data-toggle="modal" data-target="#exampleModal"><img src="../assets/image/shopping_cart-24px.svg" alt=""></a>
+
             </form>
         </div>
         <div class="dropdown">
@@ -480,7 +481,7 @@
                     </div>
                 </footer>
     </section>
-    
+
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -506,8 +507,25 @@
                 }
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
-        } 
-    
+        }
+
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.col-lg-4').hover(
+          function(){
+            $(this).animate({
+              marginTop: "-=1%",
+            },200);
+          },
+
+          function(){
+            $(this).animate({
+              marginTop: "0%",
+            },200);
+          }
+        );
+      });
     </script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
