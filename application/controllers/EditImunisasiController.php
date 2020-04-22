@@ -25,6 +25,17 @@ class EditImunisasiController extends CI_Controller {
             'jenis_imunisasi' => $jenis
         );
         $this->imunisasiModel->updateImunisasi($id,$data);
+        $cek = $this->imunisasiModel->getJadwalImunisasi($id);
+        foreach($cek as $c){
+            $file = array(
+                'jadwal_imunisasi' => $c['jadwal_imunisasi'],
+                'id_imunisasi' => $c['id_imunisasi'],
+                'id_rs' => $c['id_rs'],    
+                'jenis_imunisasi' => $jenis,
+                'nama_rs' => $c['nama_rs']                       
+            );
+            $this->imunisasiModel->updateImunisasiRS($id,$file);
+        };
         redirect('HomeImunisasiController');
     }
 

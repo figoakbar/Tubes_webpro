@@ -11,6 +11,7 @@ class PesanObatController extends CI_Controller {
  
     public function index()
     {
-        $this->load->view('pesanObat');
+        $data['data_jadwal'] = $this->modelObat->getAllData();
+        $this->load->view('pesanObat',$data);
     }
 }

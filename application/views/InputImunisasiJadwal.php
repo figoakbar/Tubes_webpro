@@ -40,6 +40,8 @@
                 <input type="text" name="idImunisasi" class="form-control mb-4" placeholder="Id Imunisasi">
                 <p>Id Rumah Sakit</p>
                 <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
+                <p>Harga</p>
+                <input type="text" name="harga" class="form-control mb-4" placeholder="Harga">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
                 <a href="<?= site_url('HomeImunisasiJadwalController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>

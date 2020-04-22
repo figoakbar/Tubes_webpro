@@ -47,6 +47,16 @@ class modelImunisasiJadwal extends CI_Model{
         }  
     }
 
+    public function nameRS($id){
+        $this->db->where('id_rumahsakit',$id);
+        $query = $this->db->get('rumahsakit');
+        return $query->row_array();
+    }
 
+    public function nameImunisasi($id){
+        $this->db->where('id_imunisasi',$id);
+        $query = $this->db->get('imunisasi');
+        return $query->row_array();
+    }
 
 }

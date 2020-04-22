@@ -33,14 +33,18 @@
 <body>
             <div class="card mx-auto" id="login">
             
-            <form class=" border border-light p-5">
-                <h1><img src="../assets/image/Logo.png">Edit Jadwal Imunisasi</h1><br>
-                <p>JadwalImunisasi</p>
-                <input type="date" id="JadwalImunisasi" class="form-control mb-4" placeholder="E-mail/No. Telepon">
+            <form class=" border border-light p-5" action="<?= site_url('EditJadwalController/editJadwalImunisasi')?>" method="post">
+                <h1><img src="<?php echo $this->config->item('base_url'); ?>/assets/image/Logo.png">Edit Jadwal Imunisasi</h1><br>
+                <p>ID Jadwal</p>
+                <input type="name" name="id" class="form-control mb-4" placeholder ="<?= $id ?>">
+                <p>Jadwal Imunisasi</p>
+                <input type="date" name="JadwalImunisasi" class="form-control mb-4" placeholder="Jadwal">
                 <p>Id Imunisasi</p>
                 <input type="text" name="idImunisasi" class="form-control mb-4" placeholder="Id Imunisasi">
                 <p>Id Rumah Sakit</p>
                 <input type="text" name="idRS" class="form-control mb-4" placeholder="Id RS">
+                <p>Harga</p>
+                <input type="text" name="harga" class="form-control mb-4" placeholder="Harga">
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Edit</button>
                 <a href="<?= site_url('HomeImunisasiJadwalController') ?>" type="submit" style="border-radius: 10px;"> < Back</a>

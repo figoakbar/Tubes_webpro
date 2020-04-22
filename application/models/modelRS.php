@@ -63,4 +63,13 @@ class modelRS extends CI_Model{
     }
 
     
+    public function getJadwalRS($id){
+        $this->db->where('id_rs',$id);
+        return $this->db->get('imunisasiJadwal')->result_array();
+    }
+
+    public function updateNamaRS($id,$data){
+        $this->db->where('id_rs',$id);
+        $this->db->update('imunisasijadwal',$data);
+    }
 }

@@ -58,7 +58,7 @@ class imunisasiModel extends CI_Model{
     }
 
     public function updateImunisasiRS($id,$data){
-        $this->db->where('id_imunisasijadwal',$id);
+        $this->db->where('id_imunisasi',$id);
         $this->db->update('imunisasijadwal',$data);
     }
 

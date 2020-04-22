@@ -23,6 +23,16 @@ class EditRSController extends CI_Controller {
             'nama_rs' => $nama,
         );
         $this->ModelRS->updateRS($id,$data);
+        $cek = $this->ModelRS->getJadwalRS($id);
+        foreach($cek as $c){
+            $file = array(
+                'jadwal_imunisasi' => $c['jadwal_imunisasi'],
+                'id_imunisasi' => $c['id_imunisasi'],
+                'id_rs' => $c['id_rs'],   
+                'nama_rs' => $nama                     
+            );
+            $this->ModelRS->updateNamaRS($id,$file);
+        };
         redirect('HomeRumahSakitController');
     }
 }
