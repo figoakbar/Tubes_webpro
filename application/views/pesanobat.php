@@ -81,6 +81,7 @@
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Cari obat" aria-label="Search" style="border-radius: 8px; width : 70%; margin-left: 40px;">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Cari</button>
+                        <a href="" style="margin-left: 10px;margin-right: 10px;"data-toggle="modal" data-target="#exampleModal"><img src="../assets/image/shopping_cart-24px.svg" alt=""></a>
                     </form>
                 </div>
             <div class="row">
@@ -91,7 +92,7 @@
                         <div class="card-body">
                             <h5 class="card-title" id="nama-obat"><?= $dj['nama_obat']?></h5>
                             <p><?= $dj['jenis_obat']?></p>
-                            <a href="<?= site_url('pesanObatController/addMedicine/'.$dj['id_obat']) ?>" type="button" style="border-radius: 10px;"> Pesan</a> 
+                            <a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('pesanObatController/addMedicine/'.$dj['id_obat']) ?>" type="button" style="border-radius: 10px;"> Pesan</a> 
                         </div>
                     </div>
                 </div>
@@ -119,6 +120,7 @@
                                     <tr><?php foreach($data_modal as $dm) : ?>
                                         <td><?= $dm['nama_obat']?></td>
                                         <td scope="row"><?= $dm['jenis_obat']?></th>
+                                        <td><a href="<?=  site_url('DeleteController/deletePesanObat/'.$dm['id_pesanobat']) ?>" style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
                                 </tr><?php endforeach; ?>
                             </tbody>
                         </table>
@@ -127,7 +129,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 30px; background-color: #e968ab;">Close</button>
-                        <a type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('pesananuserController')?>">Beli</a>
+                        <a type="button" class="btn btn-primary" style="border-radius: 30px;" href="">Beli</a>
                     </div>
                     </div>
                 </div>
