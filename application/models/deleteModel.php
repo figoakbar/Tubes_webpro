@@ -35,4 +35,9 @@ class deleteModel extends CI_Model{
         $this->db->where('id_jadwal',$id);
         return $this->db->delete('imunisasijadwal');
     }
+
+    public function deletePesanObat($id){
+        $this->db->where('id_pesanobat',$id);
+        return $this->db->delete('pesanobat');
+    }
 }
