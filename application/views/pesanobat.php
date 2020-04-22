@@ -83,9 +83,9 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Cari</button>
                     </form>
                 </div>
-                <div class="row">
+            <div class="row">
+                <?php foreach($data_jadwal as $dj) : ?>
                 <div class="col-lg-4">
-                    <?php foreach($data_jadwal as $dj) : ?>
                     <div class="card container" id="card" style="width: 18rem;border-radius: 30px;">
                         <img class="card-img-top" src="../assets/<?= $dj['picture']?>">
                         <div class="card-body">
@@ -96,8 +96,8 @@
                             </button>
                         </div>
                     </div>
-                    <?php endforeach; ?>
                 </div>
+                <?php endforeach; ?>
             </div>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
