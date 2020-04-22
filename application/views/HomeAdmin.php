@@ -109,7 +109,7 @@
                 </div></a>
             </div>
             <div class="col-lg-4">
-                <a href=""><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('DataPesanObatController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/shopping_cart-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat" href ="">Data Pesan Obat</h5>
