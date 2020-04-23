@@ -23,8 +23,7 @@ class InputObatController extends CI_Controller{
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('foto')){
             $config['info'] = $this->upload->display_errors();
-        }
-        else{
+        }else{
             $config['info'] = 'Upload Berhasil';
             $cek = array('upload_data' => $this->upload->data());
         }

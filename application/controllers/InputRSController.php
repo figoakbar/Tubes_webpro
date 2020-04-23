@@ -17,14 +17,13 @@ class InputRSController extends CI_Controller{
 
     public function addHospitalFinal(){
         $nama = $this->input->post('namaRS');
-        $config['upload_path']          = './assets/'; //isi dengan nama folder temoat menyimpan gambar
-        $config['allowed_types']        =  'gif|jpg|png';//isi dengan format/tipe gambar yang diterima
-        
+        $config['upload_path']          = './assets/image/'; 
+        $config['allowed_types']        =  'jpg|png';
+
         $this->load->library('upload', $config);
-        if (!$this->upload->do_upload('foto')){
+        if (!$this->upload->do_upload('foto_rs')){
             $config['info'] = $this->upload->display_errors();
-        }
-        else{
+        }else{
             $config['info'] = 'Upload Berhasil';
             $cek = array('upload_data' => $this->upload->data());
         }
@@ -33,10 +32,9 @@ class InputRSController extends CI_Controller{
             $uploadData = array('upload_data' => $this->upload->data());
             $data = array(
                 'nama_rs' => $nama,
-                'picture' => $uploadData['upload_data']['file_name']
+                'picture_rs' => $uploadData['upload_data']['file_name']
             );
             $this->modelRS->insertRS($data);
-            $this->session->set_flashdata('error_messages','Data berhasil diinputkan ');
         }else{
             $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
         }

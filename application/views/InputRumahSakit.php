@@ -37,7 +37,7 @@
                 <p>Nama Rumah Sakit</p>
                 <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
                 <label>Gambar</label><br>
-                <input type="file" class="form-control" name="foto">
+                <input type="file" class="form-control" name="foto_rs">
                 <br>
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
