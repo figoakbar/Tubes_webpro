@@ -96,9 +96,44 @@
                     <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
                     <td>Rp. <?= $dj['harga']?>,00</td>
+                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('#') ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
                 </tr><?php endforeach; ?>
         </tbody>
     </table>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pesanan Imunisasi Anda</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="background-color: #e968ab;">Nama Imunisasi</th>
+                                <th scope="col">Jenis Imunisasi</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5><a href="<?= site_url('ImunisasiController')?>">+ Tambah</a></h5>        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 30px; background-color: #e968ab;">Close</button>
+                    <a type="button" class="btn btn-primary" style="border-radius: 30px;" href="">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="footer">
             <footer class="page-footer font-small blue pt-4">
                     <div class="container-fluid text-center text-md-left">
