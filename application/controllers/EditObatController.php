@@ -24,6 +24,7 @@ class EditObatController extends CI_Controller {
             'jenis_obat' => $jenis
         );
         $this->inputObatModel->updateDataObat($id,$data);
+        $this->inputObatModel->updateObat($id,$data);
         redirect('HomeObatController');
     }
 }
