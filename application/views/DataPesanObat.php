@@ -70,8 +70,10 @@
                         <?php endforeach; ?>
                         </tr>
                     </tbody>
+                    
     </table>
-
+    <a href="<?= site_url('HomeAdminController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Close</a>
+                          
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
