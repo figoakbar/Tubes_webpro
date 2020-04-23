@@ -14,6 +14,18 @@ class InputRSController extends CI_Controller{
         $this->load->view('InputRumahSakit.php');
     }
 
+    public function addHospital(){
+        $nama = $this->input->post('namaRS');
+        if(!$this->modelRS->cekRS($nama)){
+            $data = array(
+                'nama_rs' => $nama
+            );
+            $this->modelRS->insertRS($data);
+        }else{
+            $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
+        }
+        redirect('HomeRumahSakitController');
+    }
 
     public function addHospitalFinal(){
         $nama = $this->input->post('namaRS');

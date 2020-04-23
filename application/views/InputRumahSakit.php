@@ -32,12 +32,10 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            <form class=" border border-light p-5" action="<?= site_url('inputRSController/addHospitalFinal')?>" method="post">
+            <form class=" border border-light p-5" action="<?= site_url('inputRSController/addHospital')?>" method="post">
                 <h1><img src="../assets/image/Logo.png">Rumah Sakit</h1><br>
                 <p>Nama Rumah Sakit</p>
                 <input type="text" name="namaRS" class="form-control mb-4" placeholder="Nama RS">
-                <label>Gambar</label><br>
-                <input type="file" class="form-control" name="foto_rs">
                 <br>
                 <!-- input button -->
                 <button class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Input</button>
