@@ -62,7 +62,7 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 8px;">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 8px;">Search</button>
-                    <a href="" style="margin-left: 10px;margin-right: 10px;"data-toggle="modal" data-target="#exampleModal"><img src="../assets/image/shopping_cart-24px.svg" alt=""></a>
+                    <a href="" style="margin-left: 10px;margin-right: 10px;"data-toggle="modal" data-target="#ImunisasiModal"><img src="../assets/image/event_note-24px.svg" alt=""></a>
                 </form>
             </div>
             <div class="dropdown">
@@ -96,12 +96,12 @@
                     <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
                     <td>Rp. <?= $dj['harga']?>,00</td>
-                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('#') ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
+                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('PesanImunisasitController/index/'.$dj['id_jadwal']) ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
                 </tr><?php endforeach; ?>
         </tbody>
     </table>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ImunisasiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -114,9 +114,10 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" style="background-color: #e968ab;">Nama Imunisasi</th>
-                                <th scope="col">Jenis Imunisasi</th>
-                                <th scope="col"></th>
+                                <th scope="col" style="background-color: #e968ab;">Nama Rumah Sakit</th>
+                                <th scope="col">Jadwal Imunisasi</th>
+                                <th scope="col" style="background-color: #e968ab;">Jenis Imunisasi</th>
+                                <th scope="col">Harga</th>
                             </tr>
                         </thead>
                         <tbody>
