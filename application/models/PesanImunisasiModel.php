@@ -9,26 +9,30 @@ class PesanImunisasiModel extends CI_Model{
 
     //basic function
     public function getAllData(){
-        return $this->db->get('pesanimunisasi')->result_array();
+        return $this->db->get('imunisasipesan')->result_array();
+    }
+
+    public function getAllData2($table){
+        return $this->db->get($table);
     }
 
     public function getPesan($id){
         $this->db->where('id_user',$id);
-        return $this->db->get('pesanimunisasi')->result_array();
+        return $this->db->get('imunisasipesan')->result_array();
     }
 
     public function insertPesan($data){
-        return $this->db->insert('pesanimunisasi',$data);
+        return $this->db->insert('imunisasipesan',$data);
     }
 
     public function updatePesan($id,$data){
         $this->db->where('id_pesan',$id);
-        return $this->db->update('pesanimunisasi',$data);
+        return $this->db->update('imunisasipesan',$data);
     }
 
     public function deletePesan($id){
         $this->db->where('id_pesan',$id);
-        return $this->db->delete('pesanimunisasi');
+        return $this->db->delete('imunisasipesan');
     }
 
     public function getUser($nama){
