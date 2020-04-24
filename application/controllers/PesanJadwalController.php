@@ -11,25 +11,27 @@ class PesanJadwalController extends CI_Controller {
  
     public function index()
     {
-        $data['data_jadwal'] = $this->PesanImunisasiModel->getAllData();
+        $data['data_imunisasi'] = $this->PesanImunisasiModel->getAllData();
         $dataUser = $this->session->userdata('nama');
         $user = $this->PesanImunisasiModel->getUser($dataUser);
-        $data['data_modal'] = $this->PesanImunisasiModel->getPesan($user['id_user']);
+        $data['data_modal_imunisasi'] = $this->PesanImunisasiModel->getPesan($user['id_user']);
         $this->load->view('imunisasi',$data);
     }
 
-    public function addMedicine($id){
-        $data = $this->PesanImunisasiModel->getObat($id);
+    public function addJadwal($id){
+        $data = $this->PesanImunisasiModel->getJadwal($id);
         $dataUser = $this->session->userdata('nama');
-        $user = $this->modelObat->getUser($dataUser);
+        $user = $this->PesanImunisasiModel->getUser($dataUser);
         $input = array(
             'id_user' => $user['id_user'],
-            'id_obat' => $id,
-            'nama_obat' => $data['nama_obat'],
+            'id_jadwal' => $id,
             'nama_user' => $user['nama_user'],
-            'jenis_obat' => $data['jenis_obat']
+            'nama_rs' => $data['nama_rs'],
+            'jadwal_imunisasi' => $data['jadwal_imunisasi'],
+            'jenis_imunisasi' => $data['jenis_imunisasi'],
+            'harga' => $data['harga']
         );
-        $this->modelObat->insertDataPesananObat($input);
-        redirect('PesanObatController');
+        $this->PesanImunisasiModel-> insertPesan($input);
+        redirect('ImunisasiController');
     }
 }
