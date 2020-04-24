@@ -32,8 +32,9 @@
 </style>
 <body>
             <div class="card mx-auto" id="login">
-            
             <form enctype="multipart/form-data" class=" border border-light p-5" action="<?= site_url('InputObatController/addMedicineFinal')?>" method = "post" >
+                <?php echo $this->session->flashdata('error_messages'); ?>
+                <?php echo $this->session->flashdata('good_messages'); ?>
                 <h1><img src="../assets/image/Logo.png">Obat</h1><br>
                 <p>Nama Obat</p>
                 <input type="text" name="namaobat" class="form-control mb-4">
