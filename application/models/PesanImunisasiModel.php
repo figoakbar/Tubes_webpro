@@ -9,7 +9,7 @@ class PesanImunisasiModel extends CI_Model{
 
     //basic function
     public function getAllData(){
-        return $this->db->get('imunisasipesan')->result_array();
+        return $this->db->get('imunisasijadwal')->result_array();
     }
 
     public function getAllData2($table){
