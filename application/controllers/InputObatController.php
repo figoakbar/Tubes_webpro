@@ -36,8 +36,15 @@ class InputObatController extends CI_Controller{
                 'picture' => $uploadData['upload_data']['file_name']
             );
             $this->InputObatModel->insertObat($data);
+            $this->session->set_flashdata('good_messages','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data obat berhasil disimpan.
+         </div>');
+            redirect('InputObatController');
         }else{
-            $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
+            $this->session->set_flashdata('error_messages','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Data obat sudah ada.
+         </div>');
+         redirect('InputObatController');
         }
         redirect('HomeObatController');
         
