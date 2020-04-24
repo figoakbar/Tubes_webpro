@@ -158,36 +158,33 @@
 
                             <hr class="clearfix w-100 d-md-none pb-3">
                             <div class="col-md-2 mb-md-0 mb-3">
-                                <h5 class="text-uppercase">Link</h5>
+                                <h5 class="text-uppercase">Legal</h5>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#!">Link 1</a>
+                                        <a href="#!">Privacy Policy</a>
                                     </li>
                                     <li>
-                                        <a href="#!">Link 2</a>
+                                        <a href="#!">Terms And Conditions</a>
                                     </li>
                                     <li>
-                                        <a href="#!">Link 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Link 4</a>
+                                        <a href="#!">Licenses</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-md-2 mb-md-0 mb-3">
-                                <h5 class="text-uppercase">Link</h5>
+                                <h5 class="text-uppercase">About Us</h5>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#!">Link 1</a>
+                                        <a href="#!">Instagram</a>
                                     </li>
                                     <li>
-                                        <a href="#!">Link 2</a>
+                                        <a href="#!">Twitter</a>
                                     </li>
                                     <li>
-                                        <a href="#!">Link 3</a>
+                                        <a href="#!">Facebook</a>
                                     </li>
                                     <li>
-                                        <a href="#!">Link 4</a>
+                                        <a href="#!">Youtube</a>
                                     </li>
                                 </ul>
                             </div>
