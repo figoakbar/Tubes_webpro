@@ -36,4 +36,9 @@ class DeleteController extends CI_Controller {
         $this->deleteModel->deletePesanObat($id);
         redirect('PesanObatController');
     }
+
+    public function deletePesanJadwal($id){
+        $this->deleteModel->deletePesanJadwal($id);
+        redirect('ImunisasiController');
+    }
 }
