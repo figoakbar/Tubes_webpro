@@ -13,5 +13,6 @@ class ImunisasiController extends CI_Controller {
     public function index(){
         $data['data_jadwal'] = $this->modelImunisasiJadwal->getAllJadwalImunisasi();
         $this->load->view('imunisasi',$data);
+        
     }
 }
