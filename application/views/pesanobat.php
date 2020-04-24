@@ -121,7 +121,7 @@
                                         <td><?= $dm['nama_obat']?></td>
                                         <td scope="row"><?= $dm['jenis_obat']?></th>
                                         <td><a href="<?=  site_url('DeleteController/deletePesanObat/'.$dm['id_pesanobat']) ?>" style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
-                                </tr><?php endforeach; ?>
+                                    </tr><?php endforeach; ?>
                             </tbody>
                         </table>
                         <h5><a href="<?= site_url('PesanObatController')?>">+ Tambah</a></h5>
