@@ -32,7 +32,9 @@ class LoginController extends CI_Controller{
             $this->session->set_userdata($data_session);
             redirect('HomeAdminController');
         }else{
-            $this->session->set_flashdata('error_messages','Email atau Password tidak valid'); 
+            $this->session->set_flashdata('error_messages','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+             Username dan Password Tidak Sesuai.
+          </div>'); 
             redirect(base_url());
         }
     }
