@@ -21,8 +21,15 @@ class InputRSController extends CI_Controller{
                 'nama_rs' => $nama
             );
             $this->modelRS->insertRS($data);
+            $this->session->set_flashdata('good_messages','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data rumah sakit berhasil disimpan.
+         </div>');
+         redirect('InputRSController');
         }else{
-            $this->session->set_flashdata('error_messages','Data Obat Sudah Ada');
+            $this->session->set_flashdata('error_messages','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Data rumah sakit sudah ada.
+         </div>');
+         redirect('InputRSController');
         }
         redirect('HomeRumahSakitController');
     }
