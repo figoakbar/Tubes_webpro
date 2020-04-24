@@ -20,6 +20,16 @@
             color: white;
     }
     </style>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
@@ -60,31 +70,37 @@
                         <th scope="col">Jenis Obat</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr><?php foreach($data_pesan as $dp) : ?>
-                            <td><?= $dp['id_pesanobat']?></td>
-                            <td><?= $dp['nama_user']?></td>
-                            <td><?= $dp['nama_obat']?></td>
-                            <td scope="row"><?= $dp['jenis_obat']?></th>
-                        </tr>
-                        <?php endforeach; ?>
-                        </tr>
-                    </tbody>
-                    
+                    <tbody id="target">
+                       
+                    </tbody>                  
     </table>
-    <a href="<?= site_url('HomeAdminController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Close</a>
-                          
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js">
-    </script>
-</body>
+    <script type='text/javascript'>
+    ambilData();
 
+            function ambilData(){
+                $.ajax({
+                type:'POST',
+                url: '<?php echo base_url().'index.php/DataPesanObatController/ambilData'?>',
+                dataType: 'json',
+                success: function(data){
+                    var baris = '';
+                    for(var i=0;i<data.length;i++){
+                        baris += '<tr>'+
+                                        '<td>'+data[i].id_pesanobat+'</td>'+
+                                        '<td>'+data[i].nama_user+'</td>'+
+                                        '<td>'+data[i].nama_obat+'</td>'+
+                                        '<td>'+data[i].jenis_obat+'</td>'+
+                                  '<tr>';
+                    }
+                    $('#target').html(baris);
+                }
+                });
+            }
+                        
+    </script>
+    <a href="<?= site_url('HomeAdminController')?>" class="btn btn-info btn-block my-4" type="submit" style="border-radius: 10px;">Close</a>
+</body>
+ <!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js">
+    </script> 
 </html>

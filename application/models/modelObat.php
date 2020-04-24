@@ -23,7 +23,7 @@ class modelObat extends CI_Model{
 
     public function updateObat($id,$data){
         $this->db->where('id_obat',$id);
-        return $this->db->update('Obat',$data);
+        return $this->db->update('pesanobat',$data);
     }
 
     public function deleteObat($id){
@@ -48,5 +48,9 @@ class modelObat extends CI_Model{
 
     public function getAllPesananObat(){
         return $this->db->get('pesanobat')->result_array();
+    }
+
+    public function getAllPesananObat2($table){
+        return $this->db->get($table);
     }
 }
