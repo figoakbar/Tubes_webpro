@@ -96,13 +96,13 @@
                     <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
                     <td>Rp. <?= $dj['harga']?>,00</td>
-                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('PesanImunisasitController/index/'.$dj['id_jadwal']) ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
+                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('PesanJadwalController/addJadwal/'.$dj['id_jadwal']) ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
                 </tr><?php endforeach; ?>
         </tbody>
     </table>
 
-    <div class="modal fade" id="ImunisasiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade bd-example-modal-lg" id="ImunisasiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Pesanan Imunisasi Anda</h5>
@@ -118,11 +118,17 @@
                                 <th scope="col">Jadwal Imunisasi</th>
                                 <th scope="col" style="background-color: #e968ab;">Jenis Imunisasi</th>
                                 <th scope="col">Harga</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                            </tr>
+                            <tr><?php foreach($data_modal_imunisasi as $dmi) : ?>
+                                <td><?= $dmi['nama_rs']?></td>
+                                <td scope="row"><?= $dmi['jadwal_imunisasi']?></th>
+                                <td scope="row"><?= $dmi['jenis_imunisasi']?></th>
+                                <td scope="row"><?= $dmi['harga']?></th>
+                                <td><a href="" style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
+                            </tr><?php endforeach; ?>
                         </tbody>
                     </table>
                     <h5><a href="<?= site_url('ImunisasiController')?>">+ Tambah</a></h5>        
