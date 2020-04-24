@@ -7,11 +7,17 @@ class DataPesanObatController extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('modelObat');
+        $this->load->helper('form');
+        $this->load->helper('url');
     }
  
     public function index(){
-        $data['data_pesan'] = $this->modelObat->getAllPesananObat();
-        $this->load->view('DataPesanObat',$data);
+        $this->load->view('DataPesanObat');
+    }
+
+    public function ambilData(){
+        $dataObat = $this->modelObat->getAllPesananObat2('pesanobat')->result();
+        echo json_encode($dataObat);
     }
 
 }
