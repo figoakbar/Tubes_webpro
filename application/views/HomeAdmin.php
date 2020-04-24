@@ -91,7 +91,7 @@
         </div>
         <div class="row" style="margin-bottom:30px">
             <div class="col-lg-4">
-                <a href=""><div class="card container " style="width: 18rem;">
+                <a href="<?= site_url('DataPesanJadwalController')?>"><div class="card container " style="width: 18rem;">
                     <img class="card-img-top" src="../assets/image/healing-24px.svg" alt="Card image cap" id="card-gambar">
                     <div class="card-body">
                         <h5 class="card-title" id="Input-Obat">Data Pesan Imunisasi</h5>
