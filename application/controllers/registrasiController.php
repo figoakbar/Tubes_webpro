@@ -30,8 +30,16 @@ class RegistrasiController extends CI_Controller{
             );
             $this->modelUser->insertUser($data);
             redirect('LoginController');
+            $this->session->set_flashdata('succes_messages','<div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Regis Success!</h4>   
+          </div>');
         }else {
-            $this->session->set_flashdata('error_messages','Password yang anda Masukan tidak sama');
+            $this->session->set_flashdata('error_messages','<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hello!</strong> Username dan Password Tidak Sesuai.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>');
             $this->index();
         }
 

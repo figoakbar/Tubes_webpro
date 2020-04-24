@@ -103,7 +103,8 @@ img{
 				</nav>
 			  	<div class="form">
 					<form style="width: 20cm;" action ="<?= site_url('RegistrasiController/user_registration')?>" method ='post'>
-                        <h1 style="font-weight: bold;">Sign Up</h1>
+						<?php echo $this->session->flashdata('error_messages'); ?>
+						<h1 style="font-weight: bold;">Sign Up</h1>
                         <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputName" style="font-weight: bold;">Name</label>
