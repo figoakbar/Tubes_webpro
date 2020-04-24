@@ -127,7 +127,7 @@
                                 <td scope="row"><?= $dmi['jadwal_imunisasi']?></th>
                                 <td scope="row"><?= $dmi['jenis_imunisasi']?></th>
                                 <td scope="row"><?= $dmi['harga']?></th>
-                                <td><a href="<?=  site_url('DeleteController/deletePesanJadwal/'.$dmi['id_pesan']) ?>" style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
+                                <td><a href="<?=  site_url('DeleteController/deletePesanJadwal/'.$dmi['id_pesan']) ?>"style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
                             </tr><?php endforeach; ?>
                         </tbody>
                     </table>
