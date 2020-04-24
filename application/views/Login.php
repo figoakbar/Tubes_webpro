@@ -100,6 +100,7 @@ img{
 					</div>
 				</nav>
 			  	<div class="form">
+				  <?php echo $this->session->flashdata('error_messages'); ?>
 					<form style="width: 20cm;" action="<?= site_url('LoginController/aksi_login') ?>" method="post"> 
                         <h1 style="font-weight: bold;">Login</h1>
                         <div class="form-group">
