@@ -96,7 +96,7 @@
                     <td scope="row"><?= $dj['jenis_imunisasi']?></th>
                     <td><?= $dj['jadwal_imunisasi']?></td>
                     <td>Rp. <?= $dj['harga']?>,00</td>
-                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('PesanJadwalController/addJadwal/'.$dj['id_jadwal']) ?>" type="button" style="border-radius: 10px;">Pesan</a> </td>
+                    <td><a  type="button" class="btn btn-primary" style="border-radius: 30px;" href="<?= site_url('PesanJadwalController/addJadwal/'.$dj['id_jadwal']) ?>" type="button" style="border-radius: 10px; color: white;">Pesan</a> </td>
                 </tr><?php endforeach; ?>
         </tbody>
     </table>
@@ -119,6 +119,7 @@
                                 <th scope="col" style="background-color: #e968ab;">Jenis Imunisasi</th>
                                 <th scope="col">Harga</th>
                                 <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -127,7 +128,7 @@
                                 <td scope="row"><?= $dmi['jadwal_imunisasi']?></th>
                                 <td scope="row"><?= $dmi['jenis_imunisasi']?></th>
                                 <td scope="row"><?= $dmi['harga']?></th>
-                                <td><a href="<?=  site_url('DeleteController/deletePesanJadwal/'.$dmi['id_pesan']) ?>"style="margin-left: 10px;margin-right:20px;"><img src="../assets/image/delete-24px.svg" alt=""></a></td>
+                                <td><a href="<?=  site_url('DeleteController/deletePesanJadwal/'.$dmi['id_pesan']) ?>"style="margin-left: 10px;margin-right:20px; color: white;"type="button" class="btn btn-secondary">Batal</a></td>
                             </tr><?php endforeach; ?>
                         </tbody>
                     </table>
@@ -135,7 +136,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 30px; background-color: #e968ab;">Close</button>
-                    <a type="button" class="btn btn-primary" style="border-radius: 30px;" href="">Next</a>
                 </div>
             </div>
         </div>
